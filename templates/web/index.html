@@ -4,7 +4,7 @@
 {% block content %}
         <!-- Start -->
         <section class="bg-half-170 d-table w-100 overflow-hidden">
-            <span class="modern-app-round position-absolute primary-50 top-50 start-50 translate-middle"></span>
+            {% comment %} <span class="modern-app-round position-absolute primary-50 top-50 start-50 translate-middle"></span> {% endcomment %}
             <div class="container position-relative z-1">
                 <div class="row align-items-center">
                     <div class="col-md-6">
@@ -20,18 +20,18 @@
 
                     <div class="col-md-6 mt-4 pt-2 mt-sm-0 pt-sm-0">
                         <div class="classic-app-image position-relative">
-                            <div class="rounded-pill position-relative overflow-hidden mx-lg-5 mx-md-4 mx-3">
-                                <img src="{% static "web/images/vector01.png" %}" class="img-fluid" alt="">
-                                <div class="bg-overlay bg-gradient-primary opacity-50"></div>
+                            <div class="position-relative overflow-hidden mx-lg-5 mx-md-4 mx-3">
+                                <img src="{% static "web/_images/enquire_image_khaleej.png" %}" class="img-fluid" alt="">
+                                {% comment %} <div class="bg-overlay bg-gradient-primary opacity-50"></div> {% endcomment %}
                             </div>
 
-                            <div class="app-images-up">
+                            {% comment %} <div class="app-images-up">
                                 <img src="{% static "web/images/programming/1.jpg" %}" class="img-fluid rounded-md mover" alt="">
                             </div>
                             
                             <div class="app-images-bottom">
                                 <img src="{% static "web/images/programming/2.jpg" %}" class="img-fluid rounded-md mover-minus" alt="">
-                            </div>
+                            </div> {% endcomment %}
                         </div>
                     </div><!--end col-->
                 </div><!--end row-->
@@ -77,11 +77,11 @@
                 <div class="row align-items-center">
                     <div class="col-lg-5 col-md-6">
                         <div class="modern-app-bg-shape position-relative">
-                            <div class="px-4">
+                            {% comment %} <div class="px-4">
                                 <img src="{% static "web/images/programming/3.jpg" %}" class="img-fluid mx-auto d-block rounded-md shadow" alt="">
-                            </div>
+                            </div> {% endcomment %}
                             
-                            <div class="modern-saas-absolute-right">
+                            {% comment %} <div class="modern-saas-absolute-right">
                                 <div class="card">
                                     <div class="features feature-primary d-flex justify-content-between align-items-center rounded shadow p-3">
                                         <div class="icon bg-soft-primary text-center rounded-pill">
@@ -93,13 +93,13 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> {% endcomment %}
 
-                            <div class="position-absolute top-0 start-0">
+                            {% comment %} <div class="position-absolute top-0 start-0">
                                 <a href="#!" data-type="youtube" data-id="yba7hPeTSjk" class="avatar avatar-md-md rounded-pill shadow-md card bg-primary d-flex justify-content-center align-items-center lightbox">
                                     <i class="mdi mdi-play fs-4 text-white"></i>
                                 </a>
-                            </div>
+                            </div> {% endcomment %}
                         </div>
                     </div><!--end col-->
 
@@ -140,7 +140,7 @@
                                 <p class="para text-muted mb-0">It is a long established fact that a reader.</p>
                             </div>
                             <span class="big-icon text-center">
-                                <i class="uil uil-chart-line"></i>
+                                {% comment %} <i class="uil uil-chart-line"></i> {% endcomment %}
                             </span>
                         </div>
                     </div><!--end col-->
@@ -155,7 +155,7 @@
                                 <p class="para text-muted mb-0">It is a long established fact that a reader.</p>
                             </div>
                             <span class="big-icon text-center">
-                                <i class="uil uil-crosshairs"></i>
+                                {% comment %} <i class="uil uil-crosshairs"></i> {% endcomment %}
                             </span>
                         </div>
                     </div><!--end col-->
@@ -170,7 +170,7 @@
                                 <p class="para text-muted mb-0">It is a long established fact that a reader.</p>
                             </div>
                             <span class="big-icon text-center">
-                                <i class="uil uil-airplay"></i>
+                                {% comment %} <i class="uil uil-airplay"></i> {% endcomment %}
                             </span>
                         </div>
                     </div><!--end col-->
@@ -185,7 +185,7 @@
                                 <p class="para text-muted mb-0">It is a long established fact that a reader.</p>
                             </div>
                             <span class="big-icon text-center">
-                                <i class="uil uil-rocket"></i>
+                                {% comment %} <i class="uil uil-rocket"></i> {% endcomment %}
                             </span>
                         </div>
                     </div><!--end col-->
@@ -214,6 +214,397 @@
         <!-- CTA End -->
 
         <!-- Start -->
+
+        <section class="section" id="courses">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <div class="section-title mb-4 pb-2">
+                            <h4 class="title mb-4">Explore Popular Courses</h4>
+                            <p class="text-muted para-desc mx-auto mb-0">Start working with <span class="text-primary fw-bold">Landrick</span> that can provide everything you need to generate awareness, drive traffic, connect.</p>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                        <div class="card blog blog-primary overflow-hidden rounded shadow border-0">
+                            <div class="position-relative d-block overflow-hidden">
+                                <img src="{% static "web/images/course/1.jpg" %}" class="img-fluid rounded-top mx-auto" alt="">
+                                <div class="overlay"></div>
+                                <a href="course-detail.html" class="h6 preview bottom-0 end-0 me-4 mb-3">Preview Now <i class="uil uil-angle-right-b align-middle"></i></a>
+                            </div>
+
+                            <div class="card-body content">
+                                <a href="course-detail.html" class="title text-dark h5">Program for Missionaries</a>
+                                <div class="rating mt-2">
+                                    <ul class="list-unstyled mb-0">
+                                        <li class="list-inline-item"><i class="mdi mdi-star h6 mb-0 text-warning"></i></li>
+                                        <li class="list-inline-item"><i class="mdi mdi-star h6 mb-0 text-warning"></i></li>
+                                        <li class="list-inline-item"><i class="mdi mdi-star h6 mb-0 text-warning"></i></li>
+                                        <li class="list-inline-item"><i class="mdi mdi-star h6 mb-0 text-warning"></i></li>
+                                        <li class="list-inline-item"><i class="mdi mdi-star h6 mb-0 text-warning"></i></li>
+                                        <li class="list-inline-item">5 Star (3 <i class="uil uil-user text-muted small"></i>)</li>
+                                    </ul>
+                                </div>
+                                <div class="fees d-flex justify-content-between">
+                                    <ul class="list-unstyled mb-0 numbers">
+                                        <li><i class="uil uil-graduation-cap text-muted"></i> 30 Students</li>
+                                        <li><i class="uil uil-notebooks text-muted"></i> 5 Lession</li>
+                                    </ul>
+                                    <h4><span class="h6">$</span>75</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                    
+                    <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                        <div class="card blog blog-primary overflow-hidden rounded shadow border-0">
+                            <div class="position-relative d-block overflow-hidden">
+                                <img src="{% static "web/images/course/2.jpg" %}" class="img-fluid rounded-top mx-auto" alt="">
+                                <div class="overlay"></div>
+                                <a href="course-detail.html" class="h6 preview bottom-0 end-0 me-4 mb-3">Preview Now <i class="uil uil-angle-right-b align-middle"></i></a>
+                            </div>
+
+                            <div class="card-body content">
+                                <a href="course-detail.html" class="title text-dark h5">Access to Higher Education</a>
+                                <div class="rating mt-2">
+                                    <ul class="list-unstyled mb-0">
+                                        <li class="list-inline-item"><i class="mdi mdi-star h6 mb-0 text-warning"></i></li>
+                                        <li class="list-inline-item"><i class="mdi mdi-star h6 mb-0 text-warning"></i></li>
+                                        <li class="list-inline-item"><i class="mdi mdi-star h6 mb-0 text-warning"></i></li>
+                                        <li class="list-inline-item"><i class="mdi mdi-star h6 mb-0 text-warning"></i></li>
+                                        <li class="list-inline-item"><i class="mdi mdi-star-outline h6 mb-0 text-warning"></i></li>
+                                        <li class="list-inline-item">3.99 Star (11 <i class="uil uil-user text-muted small"></i>)</li>
+                                    </ul>
+                                </div>
+                                <div class="fees d-flex justify-content-between">
+                                    <ul class="list-unstyled mb-0 numbers">
+                                        <li><i class="uil uil-graduation-cap text-muted"></i> 30 Students</li>
+                                        <li><i class="uil uil-notebooks text-muted"></i> 5 Lession</li>
+                                    </ul>
+                                    <h4><span class="h6">$</span>150</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                    
+                    <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                        <div class="card blog blog-primary overflow-hidden rounded shadow border-0">
+                            <div class="position-relative d-block overflow-hidden">
+                                <img src="{% static "web/images/course/3.jpg" %}" class="img-fluid rounded-top mx-auto" alt="">
+                                <div class="overlay"></div>
+                                <a href="course-detail.html" class="h6 preview bottom-0 end-0 me-4 mb-3">Preview Now <i class="uil uil-angle-right-b align-middle"></i></a>
+                            </div>
+
+                            <div class="card-body content">
+                                <a href="course-detail.html" class="title text-dark h5">Course in TEFL Teacher Training</a>
+                                <div class="rating mt-2">
+                                    <ul class="list-unstyled mb-0">
+                                        <li class="list-inline-item"><i class="mdi mdi-star h6 mb-0 text-warning"></i></li>
+                                        <li class="list-inline-item"><i class="mdi mdi-star h6 mb-0 text-warning"></i></li>
+                                        <li class="list-inline-item"><i class="mdi mdi-star h6 mb-0 text-warning"></i></li>
+                                        <li class="list-inline-item"><i class="mdi mdi-star h6 mb-0 text-warning"></i></li>
+                                        <li class="list-inline-item"><i class="mdi mdi-star-half h6 mb-0 text-warning"></i></li>
+                                        <li class="list-inline-item">4.7 Star (9 <i class="uil uil-user text-muted small"></i>)</li>
+                                    </ul>
+                                </div>
+                                <div class="fees d-flex justify-content-between">
+                                    <ul class="list-unstyled mb-0 numbers">
+                                        <li><i class="uil uil-graduation-cap text-muted"></i> 30 Students</li>
+                                        <li><i class="uil uil-notebooks text-muted"></i> 5 Lession</li>
+                                    </ul>
+                                    <h4><span class="h6">$</span>175</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                        <div class="card blog blog-primary overflow-hidden rounded shadow border-0">
+                            <div class="position-relative d-block overflow-hidden">
+                                <img src="web/images/course/4.jpg" class="img-fluid rounded-top mx-auto" alt="">
+                                <div class="overlay"></div>
+                                <a href="course-detail.html" class="h6 preview bottom-0 end-0 me-4 mb-3">Preview Now <i class="uil uil-angle-right-b align-middle"></i></a>
+                            </div>
+
+                            <div class="card-body content">
+                                <a href="course-detail.html" class="title text-dark h5">Educational Communication</a>
+                                <div class="rating mt-2">
+                                    <ul class="list-unstyled mb-0">
+                                        <li class="list-inline-item"><i class="mdi mdi-star h6 mb-0 text-warning"></i></li>
+                                        <li class="list-inline-item"><i class="mdi mdi-star h6 mb-0 text-warning"></i></li>
+                                        <li class="list-inline-item"><i class="mdi mdi-star h6 mb-0 text-warning"></i></li>
+                                        <li class="list-inline-item"><i class="mdi mdi-star h6 mb-0 text-warning"></i></li>
+                                        <li class="list-inline-item"><i class="mdi mdi-star h6 mb-0 text-warning"></i></li>
+                                        <li class="list-inline-item">5 Star (3 <i class="uil uil-user text-muted small"></i>)</li>
+                                    </ul>
+                                </div>
+                                <div class="fees d-flex justify-content-between">
+                                    <ul class="list-unstyled mb-0 numbers">
+                                        <li><i class="uil uil-graduation-cap text-muted"></i> 30 Students</li>
+                                        <li><i class="uil uil-notebooks text-muted"></i> 5 Lession</li>
+                                    </ul>
+                                    <h4><span class="h6">$</span>22</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                        <div class="card blog blog-primary overflow-hidden rounded shadow border-0">
+                            <div class="position-relative d-block overflow-hidden">
+                                <img src="web/images/course/5.jpg" class="img-fluid rounded-top mx-auto" alt="">
+                                <div class="overlay"></div>
+                                <a href="course-detail.html" class="h6 preview bottom-0 end-0 me-4 mb-3">Preview Now <i class="uil uil-angle-right-b align-middle"></i></a>
+                            </div>
+
+                            <div class="card-body content">
+                                <a href="course-detail.html" class="title text-dark h5">Introduction to Epidemiology</a>
+                                <div class="rating mt-2">
+                                    <ul class="list-unstyled mb-0">
+                                        <li class="list-inline-item"><i class="mdi mdi-star h6 mb-0 text-warning"></i></li>
+                                        <li class="list-inline-item"><i class="mdi mdi-star h6 mb-0 text-warning"></i></li>
+                                        <li class="list-inline-item"><i class="mdi mdi-star h6 mb-0 text-warning"></i></li>
+                                        <li class="list-inline-item"><i class="mdi mdi-star h6 mb-0 text-warning"></i></li>
+                                        <li class="list-inline-item"><i class="mdi mdi-star h6 mb-0 text-warning"></i></li>
+                                        <li class="list-inline-item">5 Star (3 <i class="uil uil-user text-muted small"></i>)</li>
+                                    </ul>
+                                </div>
+                                <div class="fees d-flex justify-content-between">
+                                    <ul class="list-unstyled mb-0 numbers">
+                                        <li><i class="uil uil-graduation-cap text-muted"></i> 30 Students</li>
+                                        <li><i class="uil uil-notebooks text-muted"></i> 5 Lession</li>
+                                    </ul>
+                                    <h4><span class="h6">$</span>100</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                        <div class="card blog blog-primary overflow-hidden rounded shadow border-0">
+                            <div class="position-relative d-block overflow-hidden">
+                                <img src="web/images/course/6.jpg" class="img-fluid rounded-top mx-auto" alt="">
+                                <div class="overlay"></div>
+                                <a href="course-detail.html" class="h6 preview bottom-0 end-0 me-4 mb-3">Preview Now <i class="uil uil-angle-right-b align-middle"></i></a>
+                            </div>
+
+                            <div class="card-body content">
+                                <a href="course-detail.html" class="title text-dark h5">Good Clinical Practice</a>
+                                <div class="rating mt-2">
+                                    <ul class="list-unstyled mb-0">
+                                        <li class="list-inline-item"><i class="mdi mdi-star h6 mb-0 text-warning"></i></li>
+                                        <li class="list-inline-item"><i class="mdi mdi-star h6 mb-0 text-warning"></i></li>
+                                        <li class="list-inline-item"><i class="mdi mdi-star h6 mb-0 text-warning"></i></li>
+                                        <li class="list-inline-item"><i class="mdi mdi-star h6 mb-0 text-warning"></i></li>
+                                        <li class="list-inline-item"><i class="mdi mdi-star-outline h6 mb-0 text-warning"></i></li>
+                                        <li class="list-inline-item">4 Star (2 <i class="uil uil-user text-muted small"></i>)</li>
+                                    </ul>
+                                </div>
+                                <div class="fees d-flex justify-content-between">
+                                    <ul class="list-unstyled mb-0 numbers">
+                                        <li><i class="uil uil-graduation-cap text-muted"></i> 30 Students</li>
+                                        <li><i class="uil uil-notebooks text-muted"></i> 5 Lession</li>
+                                    </ul>
+                                    <h4><span class="h6">$</span>110</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                        <div class="card blog blog-primary overflow-hidden rounded shadow border-0">
+                            <div class="position-relative d-block overflow-hidden">
+                                <img src="web/images/course/7.jpg" class="img-fluid rounded-top mx-auto" alt="">
+                                <div class="overlay"></div>
+                                <a href="course-detail.html" class="h6 preview bottom-0 end-0 me-4 mb-3">Preview Now <i class="uil uil-angle-right-b align-middle"></i></a>
+                            </div>
+
+                            <div class="card-body content">
+                                <a href="course-detail.html" class="title text-dark h5">Advanced Diagnostic Research</a>
+                                <div class="rating mt-2">
+                                    <ul class="list-unstyled mb-0">
+                                        <li class="list-inline-item"><i class="mdi mdi-star h6 mb-0 text-warning"></i></li>
+                                        <li class="list-inline-item"><i class="mdi mdi-star h6 mb-0 text-warning"></i></li>
+                                        <li class="list-inline-item"><i class="mdi mdi-star h6 mb-0 text-warning"></i></li>
+                                        <li class="list-inline-item"><i class="mdi mdi-star h6 mb-0 text-warning"></i></li>
+                                        <li class="list-inline-item"><i class="mdi mdi-star-half h6 mb-0 text-warning"></i></li>
+                                        <li class="list-inline-item">4.7 Star (8 <i class="uil uil-user text-muted small"></i>)</li>
+                                    </ul>
+                                </div>
+                                <div class="fees d-flex justify-content-between">
+                                    <ul class="list-unstyled mb-0 numbers">
+                                        <li><i class="uil uil-graduation-cap text-muted"></i> 30 Students</li>
+                                        <li><i class="uil uil-notebooks text-muted"></i> 5 Lession</li>
+                                    </ul>
+                                    <h4><span class="h6">$</span>149</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                        <div class="card blog blog-primary overflow-hidden rounded shadow border-0">
+                            <div class="position-relative d-block overflow-hidden">
+                                <img src="web/images/course/8.jpg" class="img-fluid rounded-top mx-auto" alt="">
+                                <div class="overlay"></div>
+                                <a href="course-detail.html" class="h6 preview bottom-0 end-0 me-4 mb-3">Preview Now <i class="uil uil-angle-right-b align-middle"></i></a>
+                            </div>
+
+                            <div class="card-body content">
+                                <a href="course-detail.html" class="title text-dark h5">Skills Development Facilitation</a>
+                                <div class="rating mt-2">
+                                    <ul class="list-unstyled mb-0">
+                                        <li class="list-inline-item"><i class="mdi mdi-star h6 mb-0 text-warning"></i></li>
+                                        <li class="list-inline-item"><i class="mdi mdi-star h6 mb-0 text-warning"></i></li>
+                                        <li class="list-inline-item"><i class="mdi mdi-star h6 mb-0 text-warning"></i></li>
+                                        <li class="list-inline-item"><i class="mdi mdi-star h6 mb-0 text-warning"></i></li>
+                                        <li class="list-inline-item"><i class="mdi mdi-star h6 mb-0 text-warning"></i></li>
+                                        <li class="list-inline-item">5 Star (3 <i class="uil uil-user text-muted small"></i>)</li>
+                                    </ul>
+                                </div>
+                                <div class="fees d-flex justify-content-between">
+                                    <ul class="list-unstyled mb-0 numbers">
+                                        <li><i class="uil uil-graduation-cap text-muted"></i> 30 Students</li>
+                                        <li><i class="uil uil-notebooks text-muted"></i> 5 Lession</li>
+                                    </ul>
+                                    <h4><span class="h6">$</span>135</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                        <div class="card blog blog-primary overflow-hidden rounded shadow border-0">
+                            <div class="position-relative d-block overflow-hidden">
+                                <img src="web/images/course/9.jpg" class="img-fluid rounded-top mx-auto" alt="">
+                                <div class="overlay"></div>
+                                <a href="course-detail.html" class="h6 preview bottom-0 end-0 me-4 mb-3">Preview Now <i class="uil uil-angle-right-b align-middle"></i></a>
+                            </div>
+
+                            <div class="card-body content">
+                                <a href="course-detail.html" class="title text-dark h5">PGCE Primary</a>
+                                <div class="rating mt-2">
+                                    <ul class="list-unstyled mb-0">
+                                        <li class="list-inline-item"><i class="mdi mdi-star h6 mb-0 text-warning"></i></li>
+                                        <li class="list-inline-item"><i class="mdi mdi-star h6 mb-0 text-warning"></i></li>
+                                        <li class="list-inline-item"><i class="mdi mdi-star h6 mb-0 text-warning"></i></li>
+                                        <li class="list-inline-item"><i class="mdi mdi-star h6 mb-0 text-warning"></i></li>
+                                        <li class="list-inline-item"><i class="mdi mdi-star h6 mb-0 text-warning"></i></li>
+                                        <li class="list-inline-item">5 Star (3 <i class="uil uil-user text-muted small"></i>)</li>
+                                    </ul>
+                                </div>
+                                <div class="fees d-flex justify-content-between">
+                                    <ul class="list-unstyled mb-0 numbers">
+                                        <li><i class="uil uil-graduation-cap text-muted"></i> 30 Students</li>
+                                        <li><i class="uil uil-notebooks text-muted"></i> 5 Lession</li>
+                                    </ul>
+                                    <h4><span class="h6">$</span>55</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-12 mt-4 pt-2 text-center">
+                        <a href="javascript:void(0)" class="btn btn-primary">See More Courses <i class="uil uil-angle-right-b align-middle"></i></a>
+                    </div>
+                </div><!--end row-->
+            </div><!--end container-->
+
+            <div class="container mt-100 mt-60" id="instructors">
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <div class="section-title mb-4 pb-2">
+                            <h4 class="title mb-4">Instructors</h4>
+                            <p class="text-muted para-desc mx-auto mb-0">Start working with <span class="text-primary fw-bold">Landrick</span> that can provide everything you need to generate awareness, drive traffic, connect.</p>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 mt-4 pt-2">
+                        <div class="card team team-primary text-center rounded border-0">
+                            <div class="card-body">
+                                <div class="position-relative">
+                                    <img src="web/images/client/01.jpg" class="img-fluid avatar avatar-ex-large rounded-circle shadow" alt="">
+                                    <ul class="list-unstyled mb-0 team-icon">
+                                        <li class="list-inline-item"><a href="javascript:void(0)" class="btn btn-primary btn-pills btn-sm btn-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-facebook icons"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a></li>
+                                        <li class="list-inline-item"><a href="javascript:void(0)" class="btn btn-primary btn-pills btn-sm btn-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram icons"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a></li>
+                                        <li class="list-inline-item"><a href="javascript:void(0)" class="btn btn-primary btn-pills btn-sm btn-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter icons"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a></li>
+                                        <li class="list-inline-item"><a href="javascript:void(0)" class="btn btn-primary btn-pills btn-sm btn-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin icons"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a></li>
+                                    </ul><!--end icon-->
+                                </div>
+                                <div class="content pt-3">
+                                    <h5 class="mb-0"><a href="javascript:void(0)" class="name text-dark">Ronny Jofra</a></h5>
+                                    <small class="designation text-muted">UI Designers</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-3 col-md-6 mt-4 pt-2">
+                        <div class="card team team-primary text-center rounded border-0">
+                            <div class="card-body">
+                                <div class="position-relative">
+                                    <img src="web/images/client/04.jpg" class="img-fluid avatar avatar-ex-large rounded-circle shadow" alt="">
+                                    <ul class="list-unstyled mb-0 team-icon">
+                                        <li class="list-inline-item"><a href="javascript:void(0)" class="btn btn-primary btn-pills btn-sm btn-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-facebook icons"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a></li>
+                                        <li class="list-inline-item"><a href="javascript:void(0)" class="btn btn-primary btn-pills btn-sm btn-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram icons"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a></li>
+                                        <li class="list-inline-item"><a href="javascript:void(0)" class="btn btn-primary btn-pills btn-sm btn-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter icons"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a></li>
+                                        <li class="list-inline-item"><a href="javascript:void(0)" class="btn btn-primary btn-pills btn-sm btn-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin icons"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a></li>
+                                    </ul><!--end icon-->
+                                </div>
+                                <div class="content pt-3">
+                                    <h5 class="mb-0"><a href="javascript:void(0)" class="name text-dark">Micheal Carlo</a></h5>
+                                    <small class="designation text-muted">UX Designer</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                    
+                    <div class="col-lg-3 col-md-6 mt-4 pt-2">
+                        <div class="card team team-primary text-center rounded border-0">
+                            <div class="card-body">
+                                <div class="position-relative">
+                                    <img src="web/images/client/03.jpg" class="img-fluid avatar avatar-ex-large rounded-circle shadow" alt="">
+                                    <ul class="list-unstyled mb-0 team-icon">
+                                        <li class="list-inline-item"><a href="javascript:void(0)" class="btn btn-primary btn-pills btn-sm btn-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-facebook icons"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a></li>
+                                        <li class="list-inline-item"><a href="javascript:void(0)" class="btn btn-primary btn-pills btn-sm btn-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram icons"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a></li>
+                                        <li class="list-inline-item"><a href="javascript:void(0)" class="btn btn-primary btn-pills btn-sm btn-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter icons"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a></li>
+                                        <li class="list-inline-item"><a href="javascript:void(0)" class="btn btn-primary btn-pills btn-sm btn-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin icons"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a></li>
+                                    </ul><!--end icon-->
+                                </div>
+                                <div class="content pt-3">
+                                    <h5 class="mb-0"><a href="javascript:void(0)" class="name text-dark">Aliana Rosy</a></h5>
+                                    <small class="designation text-muted">Web Developer</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                    
+                    <div class="col-lg-3 col-md-6 mt-4 pt-2">
+                        <div class="card team team-primary text-center rounded border-0">
+                            <div class="card-body">
+                                <div class="position-relative">
+                                    <img src="web/images/client/02.jpg" class="img-fluid avatar avatar-ex-large rounded-circle shadow" alt="">
+                                    <ul class="list-unstyled mb-0 team-icon">
+                                        <li class="list-inline-item"><a href="javascript:void(0)" class="btn btn-primary btn-pills btn-sm btn-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-facebook icons"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a></li>
+                                        <li class="list-inline-item"><a href="javascript:void(0)" class="btn btn-primary btn-pills btn-sm btn-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram icons"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a></li>
+                                        <li class="list-inline-item"><a href="javascript:void(0)" class="btn btn-primary btn-pills btn-sm btn-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter icons"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a></li>
+                                        <li class="list-inline-item"><a href="javascript:void(0)" class="btn btn-primary btn-pills btn-sm btn-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin icons"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a></li>
+                                    </ul><!--end icon-->
+                                </div>
+                                <div class="content pt-3">
+                                    <h5 class="mb-0"><a href="javascript:void(0)" class="name text-dark">Sofia Razaq</a></h5>
+                                    <small class="designation text-muted">Web Designer</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+        </section>
         <section class="section">
             <div class="container">
                 <div class="row justify-content-center">

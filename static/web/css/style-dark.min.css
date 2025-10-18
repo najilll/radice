@@ -5,7 +5,7 @@ body {
     overflow-x: hidden !important;
     font-size: 1rem;
     color: #f8f9fa;
-    background-color: #0e0846
+    background: linear-gradient(to left, #1821a3, #000000);
 }
 
 .h1,
@@ -366,7 +366,7 @@ p {
 }
 
 #topnav.nav-sticky {
-    background: #1c2836;
+    background: #000000;
     -webkit-box-shadow: 0 0 3px rgba(173, 181, 189, .15);
     box-shadow: 0 0 3px rgba(173, 181, 189, .15)
 }
@@ -900,7 +900,7 @@ p {
 }
 
 .footer {
-    background: #212f40;
+    background: #000000;
     position: relative;
     color: #adb5bd
 }
