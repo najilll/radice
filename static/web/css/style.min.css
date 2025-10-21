@@ -81,11 +81,11 @@ p {
 }
 
 #topnav .has-submenu.active .submenu li.active>a {
-    color: #2f55d4 !important
+    color: #093052 !important
 }
 
 #topnav .has-submenu.active.active .menu-arrow {
-    border-color: #2f55d4
+    border-color: #093052
 }
 
 #topnav #navigation.toggle-menu {
@@ -133,11 +133,11 @@ p {
 }
 
 #topnav .has-submenu .submenu .has-submenu .submenu .has-submenu:hover .submenu-arrow {
-    border-color: #2f55d4
+    border-color: #093052
 }
 
 #topnav .has-submenu .submenu .has-submenu:hover>.submenu-arrow {
-    border-color: #2f55d4
+    border-color: #093052
 }
 
 #topnav .navbar-toggle {
@@ -248,7 +248,7 @@ p {
 }
 
 #topnav .navbar-toggle.open span:hover {
-    background-color: #2f55d4
+    background-color: #093052
 }
 
 #topnav .navbar-toggle .navigation-menu>li>a:hover,
@@ -272,7 +272,7 @@ p {
 
 #topnav .navigation-menu>li.active>a,
 #topnav .navigation-menu>li:hover>a {
-    color: #2f55d4 !important
+    color: #093052 !important
 }
 
 #topnav .navigation-menu>li>a {
@@ -291,7 +291,7 @@ p {
 
 #topnav .navigation-menu>li>a:active,
 #topnav .navigation-menu>li>a:hover {
-    color: #2f55d4
+    color: #093052
 }
 
 #topnav .navigation-menu>li .submenu.megamenu li .megamenu-head {
@@ -345,12 +345,12 @@ p {
 
 #topnav.scroll .navigation-menu>li.active>a,
 #topnav.scroll .navigation-menu>li:hover>a {
-    color: #2f55d4
+    color: #093052
 }
 
 #topnav.scroll .navigation-menu>li.active>.menu-arrow,
 #topnav.scroll .navigation-menu>li:hover>.menu-arrow {
-    border-color: #2f55d4
+    border-color: #093052
 }
 
 #topnav.defaultscroll.dark-menubar .logo {
@@ -376,17 +376,17 @@ p {
 }
 
 #topnav.nav-sticky .navigation-menu.nav-light>li.active>a {
-    color: #2f55d4 !important
+    color: #093052 !important
 }
 
 #topnav.nav-sticky .navigation-menu.nav-light>li.active>.menu-arrow,
 #topnav.nav-sticky .navigation-menu.nav-light>li:hover>.menu-arrow {
-    border-color: #2f55d4 !important
+    border-color: #093052 !important
 }
 
 #topnav.nav-sticky .navigation-menu.nav-light>li.active>a,
 #topnav.nav-sticky .navigation-menu.nav-light>li:hover>a {
-    color: #2f55d4 !important
+    color: #093052 !important
 }
 
 #topnav.nav-sticky .navigation-menu.nav-light .has-submenu .menu-arrow {
@@ -494,7 +494,7 @@ p {
     }
 
     #topnav .navigation-menu>li .submenu li a:hover {
-        color: #2f55d4 !important
+        color: #093052 !important
     }
 
     #topnav .navigation-menu>li .submenu li ul {
@@ -542,12 +542,12 @@ p {
     }
 
     #topnav .navigation-menu>li:hover>.menu-arrow {
-        border-color: #2f55d4
+        border-color: #093052
     }
 
     #topnav .navigation-menu>li.active>a,
     #topnav .navigation-menu>li:hover>a {
-        color: #2f55d4 !important
+        color: #093052 !important
     }
 
     #topnav .navigation-menu>li.last-elements .submenu {
@@ -738,7 +738,7 @@ p {
     #topnav .navigation-menu>li .submenu li a:hover,
     #topnav .navigation-menu>li.has-submenu.open>a,
     #topnav .navigation-menu>li>a:hover {
-        color: #2f55d4
+        color: #093052
     }
 
     #topnav .menu-extras .menu-item {
@@ -768,7 +768,7 @@ p {
     }
 
     #topnav .has-submenu.active a {
-        color: #2f55d4
+        color: #093052
     }
 
     #navigation {
@@ -882,17 +882,17 @@ p {
 
 .sidebar-nav>.navbar-item.active .navbar-link,
 .sidebar-nav>.navbar-item:hover .navbar-link {
-    color: #2f55d4 !important
+    color: #093052 !important
 }
 
 #navmenu-nav li.active a {
-    color: #2f55d4 !important
+    color: #093052 !important
 }
 
 #navmenu-nav li.account-menu.active .navbar-link,
 #navmenu-nav li.account-menu:hover .navbar-link {
     color: #fff !important;
-    background-color: #2f55d4 !important
+    background-color: #093052 !important
 }
 
 .navbar-white-bg {
@@ -900,7 +900,7 @@ p {
 }
 
 .footer {
-    background: #202942;
+    background: #093052;
     position: relative;
     color: #adb5bd
 }
@@ -1117,7 +1117,7 @@ p {
     display: block;
     font-family: "Material Design Icons";
     font-size: 16px;
-    color: #2f55d4;
+    color: #093052;
     position: absolute;
     right: 20px;
     top: 50%;
@@ -1142,7 +1142,7 @@ p {
 }
 
 .accordion .accordion-item .accordion-button:not(.collapsed) {
-    color: #2f55d4
+    color: #093052
 }
 
 .accordion .accordion-item .accordion-button:after {
@@ -1180,7 +1180,7 @@ p {
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    background-color: #2f55d4;
+    background-color: #093052;
     opacity: .6;
     position: absolute;
     top: 0;
@@ -1238,7 +1238,7 @@ p {
 }
 
 .form-control:focus {
-    border-color: #2f55d4;
+    border-color: #093052;
     -webkit-box-shadow: none;
     box-shadow: none
 }
@@ -1277,14 +1277,14 @@ p {
 }
 
 .form-check-input:focus {
-    border-color: #2f55d4;
+    border-color: #093052;
     -webkit-box-shadow: none;
     box-shadow: none
 }
 
 .form-check-input.form-check-input:checked {
-    background-color: #2f55d4;
-    border-color: #2f55d4
+    background-color: #093052;
+    border-color: #093052
 }
 
 .subcribe-form .btn {
@@ -1336,16 +1336,16 @@ p {
 }
 
 .blog.blog-primary .tag {
-    background: #2f55d4 !important
+    background: #093052 !important
 }
 
 .blog.blog-primary .readmore:hover,
 .blog.blog-primary .title:hover {
-    color: #2f55d4 !important
+    color: #093052 !important
 }
 
 .blog.blog-primary .link {
-    color: #2f55d4 !important
+    color: #093052 !important
 }
 
 .blog.blog-secondary .tag {
@@ -1590,7 +1590,7 @@ p {
 }
 
 .sidebar .widget .blog-categories li a:hover {
-    color: #2f55d4
+    color: #093052
 }
 
 .sidebar .widget .post-recent {
@@ -1619,7 +1619,7 @@ p {
 }
 
 .sidebar .widget .post-recent .post-recent-content a:hover {
-    color: #2f55d4
+    color: #093052
 }
 
 .sidebar .widget .post-recent .post-recent-content span {
@@ -1641,12 +1641,12 @@ p {
 }
 
 .tagcloud>a:hover {
-    background: #2f55d4;
+    background: #093052;
     color: #fff
 }
 
 .media-list .media .media-heading:hover {
-    color: #2f55d4 !important
+    color: #093052 !important
 }
 
 .media-list .sub-comment {
@@ -1666,41 +1666,41 @@ p {
 }
 
 .job-box.job-primary .position a:hover {
-    color: #2f55d4 !important
+    color: #093052 !important
 }
 
 .job-box.job-primary .company-name:hover {
-    color: #2f55d4 !important
+    color: #093052 !important
 }
 
 .job-box.job-primary .readmore:hover,
 .job-box.job-primary .title:hover {
-    color: #2f55d4 !important
+    color: #093052 !important
 }
 
 .job-box.job-primary .icons {
-    color: #2f55d4 !important
+    color: #093052 !important
 }
 
 .job-box.job-primary.candidate-list .name:hover,
 .job-box.job-primary.company-list .name:hover {
-    color: #2f55d4 !important
+    color: #093052 !important
 }
 
 .job-box.job-primary .bg {
-    background-color: #2f55d4 !important
+    background-color: #093052 !important
 }
 
 .job-box.job-primary .bg-soft {
     background-color: rgba(47, 85, 212, .1) !important;
     border: 1px solid rgba(47, 85, 212, .1) !important;
-    color: #2f55d4 !important
+    color: #093052 !important
 }
 
 .job-box.job-primary .btn-soft {
     background-color: rgba(47, 85, 212, .05) !important;
     border: 1px solid rgba(47, 85, 212, .05) !important;
-    color: #2f55d4 !important;
+    color: #093052 !important;
     -webkit-box-shadow: 0 3px 5px 0 rgba(47, 85, 212, .1);
     box-shadow: 0 3px 5px 0 rgba(47, 85, 212, .1)
 }
@@ -1710,8 +1710,8 @@ p {
 .job-box.job-primary .btn-soft:active,
 .job-box.job-primary .btn-soft:focus,
 .job-box.job-primary .btn-soft:hover {
-    background-color: #2f55d4 !important;
-    border-color: #2f55d4 !important;
+    background-color: #093052 !important;
+    border-color: #093052 !important;
     color: #fff !important
 }
 
@@ -2255,7 +2255,7 @@ p {
 }
 
 .categories.category-primary .title:hover {
-    color: #2f55d4 !important
+    color: #093052 !important
 }
 
 .categories.category-secondary .title:hover {
@@ -2394,7 +2394,7 @@ p {
 
 .qs-datepicker-container .qs-squares .qs-square.qs-current,
 .qs-datepicker-container .qs-squares .qs-square:not(.qs-empty):not(.qs-disabled):not(.qs-day):not(.qs-active):hover {
-    background: #2f55d4;
+    background: #093052;
     color: #fff;
     border-radius: 30px;
     font-weight: 500;
@@ -2562,7 +2562,7 @@ p {
 
 .play-icon i {
     height: 75px;
-    -webkit-text-stroke: 2px #2f55d4;
+    -webkit-text-stroke: 2px #093052;
     -webkit-text-fill-color: transparent;
     width: 75px;
     font-size: 25px;
@@ -2572,8 +2572,8 @@ p {
 }
 
 .play-icon i:hover {
-    -webkit-text-stroke: 2px #2f55d4;
-    -webkit-text-fill-color: #2f55d4
+    -webkit-text-stroke: 2px #093052;
+    -webkit-text-fill-color: #093052
 }
 
 @media (max-width:767px) {
@@ -2592,11 +2592,11 @@ p {
 
 .features.feature-primary .color,
 .features.feature-primary .read-more {
-    color: #2f55d4 !important
+    color: #093052 !important
 }
 
 .features.feature-primary.feature-clean .icons {
-    color: #2f55d4 !important
+    color: #093052 !important
 }
 
 .features.feature-primary.feature-clean .icons i {
@@ -2604,35 +2604,35 @@ p {
 }
 
 .features.feature-primary.feature-clean .title:hover {
-    color: #2f55d4 !important
+    color: #093052 !important
 }
 
 .features.feature-primary.feature-full-bg .icon-color {
-    color: #2f55d4 !important
+    color: #093052 !important
 }
 
 .features.feature-primary.feature-full-bg:hover {
-    background-color: #2f55d4 !important
+    background-color: #093052 !important
 }
 
 .features.feature-primary.key-feature .icon {
     background: linear-gradient(45deg, transparent, rgba(47, 85, 212, .15));
-    color: #2f55d4
+    color: #093052
 }
 
 .features.feature-primary.course-feature .full-img {
-    color: #2f55d4 !important
+    color: #093052 !important
 }
 
 .features.feature-primary.explore-feature:hover .icons,
 .features.feature-primary.explore-feature:hover .title {
-    color: #2f55d4 !important
+    color: #093052 !important
 }
 
 .features.feature-primary .btn-soft {
     background-color: rgba(47, 85, 212, .05) !important;
     border: 1px solid rgba(47, 85, 212, .05) !important;
-    color: #2f55d4 !important;
+    color: #093052 !important;
     -webkit-box-shadow: 0 3px 5px 0 rgba(47, 85, 212, .1);
     box-shadow: 0 3px 5px 0 rgba(47, 85, 212, .1)
 }
@@ -2642,8 +2642,8 @@ p {
 .features.feature-primary .btn-soft:active,
 .features.feature-primary .btn-soft:focus,
 .features.feature-primary .btn-soft:hover {
-    background-color: #2f55d4 !important;
-    border-color: #2f55d4 !important;
+    background-color: #093052 !important;
+    border-color: #093052 !important;
     color: #fff !important
 }
 
@@ -3679,8 +3679,8 @@ p {
     width: 500px;
     height: 500px;
     border-radius: 50%;
-    background: -webkit-gradient(linear, left top, right top, from(rgba(47, 85, 212, .3)), color-stop(35%, rgba(47, 85, 212, .5)), to(#2f55d4));
-    background: linear-gradient(to right, rgba(47, 85, 212, .3) 0, rgba(47, 85, 212, .5) 35%, #2f55d4 100%);
+    background: -webkit-gradient(linear, left top, right top, from(rgba(47, 85, 212, .3)), color-stop(35%, rgba(47, 85, 212, .5)), to(#093052));
+    background: linear-gradient(to right, rgba(47, 85, 212, .3) 0, rgba(47, 85, 212, .5) 35%, #093052 100%);
     -webkit-box-shadow: 0 0 40px rgba(47, 85, 212, .2);
     box-shadow: 0 0 40px rgba(47, 85, 212, .2);
     z-index: -1
@@ -3788,26 +3788,26 @@ p {
 
 .nft.nft-primary .read-more:hover,
 .nft.nft-primary .title:hover {
-    color: #2f55d4 !important
+    color: #093052 !important
 }
 
 .nft.nft-primary .link {
-    color: #2f55d4 !important
+    color: #093052 !important
 }
 
 .nft.nft-primary .author .name:hover {
-    color: #2f55d4 !important
+    color: #093052 !important
 }
 
 .nft.nft-primary .bg-soft {
     background-color: rgba(47, 85, 212, .1) !important;
     border: 1px solid rgba(47, 85, 212, .1) !important;
-    color: #2f55d4 !important
+    color: #093052 !important
 }
 
 .nft.nft-primary .btn {
-    background-color: #2f55d4 !important;
-    border: 1px solid #2f55d4 !important;
+    background-color: #093052 !important;
+    border: 1px solid #093052 !important;
     color: #fff !important;
     -webkit-box-shadow: 0 3px 5px 0 rgba(47, 85, 212, .1);
     box-shadow: 0 3px 5px 0 rgba(47, 85, 212, .1)
@@ -4651,12 +4651,12 @@ p {
     -webkit-transition: all .5s ease;
     transition: all .5s ease;
     border: 0;
-    background: #2f55d4 !important;
+    background: #093052 !important;
     margin: auto 4px
 }
 
 .carousel-indicators .active {
-    background-color: #2f55d4 !important;
+    background-color: #093052 !important;
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg)
 }
@@ -4684,13 +4684,13 @@ p {
 }
 
 .bg-animation-left.crypto-home:after {
-    background: #2f55d4;
+    background: #093052;
     width: 80%;
     clip-path: polygon(0 0, 100% 0, 50% 100%, 0 100%)
 }
 
 .bg-animation-left.task-management-home:after {
-    background: url(../images/task/bg.png) #2f55d4;
+    background: url(../images/task/bg.png) #093052;
     width: 100%;
     clip-path: circle(65% at 40% 25%)
 }
@@ -4745,7 +4745,7 @@ p {
 .classic-saas-image .bg-saas-shape:after {
     -webkit-box-shadow: 0 0 40px rgba(47, 85, 212, .5);
     box-shadow: 0 0 40px rgba(47, 85, 212, .5);
-    background-color: #2f55d4
+    background-color: #093052
 }
 
 .shape-before .shape-img {
@@ -4783,8 +4783,8 @@ p {
 
 .swiper-slider-hero .swiper-button-next:hover,
 .swiper-slider-hero .swiper-button-prev:hover {
-    background: #2f55d4;
-    border-color: #2f55d4 !important
+    background: #093052;
+    border-color: #093052 !important
 }
 
 .swiper-slider-hero .swiper-button-prev {
@@ -4867,7 +4867,7 @@ p {
     left: 0;
     margin: 0 auto;
     border-radius: 50%;
-    background: #2f55d4
+    background: #093052
 }
 
 @media (max-width:576px) {
@@ -5080,20 +5080,20 @@ p {
 }
 
 .pricing.pricing-primary.business-rate:hover {
-    border-color: #2f55d4 !important
+    border-color: #093052 !important
 }
 
 .pricing.pricing-primary.business-rate:hover .title {
-    color: #2f55d4
+    color: #093052
 }
 
 .pricing.pricing-primary.starter-plan {
-    border-color: #2f55d4 !important
+    border-color: #093052 !important
 }
 
 .pricing.pricing-primary .icon,
 .pricing.pricing-primary .name {
-    color: #2f55d4
+    color: #093052
 }
 
 .pricing.pricing-secondary.business-rate:hover {
@@ -5289,7 +5289,7 @@ p {
 }
 
 .ribbon.ribbon-primary span {
-    background-color: #2f55d4 !important
+    background-color: #093052 !important
 }
 
 .ribbon.ribbon-primary span:before {
@@ -5513,7 +5513,7 @@ p {
 }
 
 .switcher-pricing .toggler--is-active {
-    color: #2f55d4 !important
+    color: #093052 !important
 }
 
 .switcher-pricing .form-switch .form-check-input {
@@ -5527,7 +5527,7 @@ p {
 }
 
 .team.team-primary .name:hover {
-    color: #2f55d4 !important
+    color: #093052 !important
 }
 
 .team.team-secondary .name:hover {
@@ -5640,7 +5640,7 @@ p {
 }
 
 .tns-nav button.tns-nav-active {
-    background: #2f55d4 !important;
+    background: #093052 !important;
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg)
 }
@@ -5667,7 +5667,7 @@ p {
 
 .tns-controls button[data-controls=next]:hover,
 .tns-controls button[data-controls=prev]:hover {
-    background: #2f55d4;
+    background: #093052;
     color: #fff
 }
 
@@ -5697,7 +5697,7 @@ p {
     top: 17px;
     left: 0;
     height: 2px;
-    background: #2f55d4
+    background: #093052
 }
 
 .tiny-timeline .item-box {
@@ -5709,7 +5709,7 @@ p {
     content: "";
     position: absolute;
     left: 50%;
-    background: #2f55d4
+    background: #093052
 }
 
 .tiny-timeline .item-box:before {
@@ -5900,22 +5900,22 @@ html[dir=rtl] .tns-visually-hidden {
 }
 
 .work-container.work-primary .title:hover {
-    color: #2f55d4 !important
+    color: #093052 !important
 }
 
 .work-container.work-primary.work-creative .work-icon,
 .work-container.work-primary.work-modern .work-icon {
-    color: #2f55d4 !important
+    color: #093052 !important
 }
 
 .work-container.work-primary.work-creative .work-icon:hover,
 .work-container.work-primary.work-modern .work-icon:hover {
-    background: #2f55d4 !important
+    background: #093052 !important
 }
 
 .work-container.work-primary .btn {
-    background-color: #2f55d4 !important;
-    border: 1px solid #2f55d4 !important;
+    background-color: #093052 !important;
+    border: 1px solid #093052 !important;
     color: #fff !important;
     -webkit-box-shadow: 0 3px 5px 0 rgba(47, 85, 212, .1);
     box-shadow: 0 3px 5px 0 rgba(47, 85, 212, .1)
@@ -5932,11 +5932,11 @@ html[dir=rtl] .tns-visually-hidden {
 }
 
 .work-container.work-primary .bg {
-    background-color: #2f55d4 !important
+    background-color: #093052 !important
 }
 
 .work-container.work-primary .link {
-    color: #2f55d4 !important
+    color: #093052 !important
 }
 
 .work-container.work-secondary .title:hover {
@@ -6532,8 +6532,8 @@ html[dir=rtl] .tns-visually-hidden {
 
 .container-filter li.active,
 .container-filter li:hover {
-    color: #2f55d4 !important;
-    border-color: #2f55d4 !important
+    color: #093052 !important;
+    border-color: #093052 !important
 }
 
 .container-filter.filter-border li {
@@ -6543,7 +6543,7 @@ html[dir=rtl] .tns-visually-hidden {
 
 .container-filter.filter-border li.active,
 .container-filter.filter-border li:hover {
-    color: #2f55d4 !important
+    color: #093052 !important
 }
 
 .spacing {
@@ -6572,7 +6572,7 @@ html[dir=rtl] .tns-visually-hidden {
 }
 
 .event-schedule.event-primary .date {
-    color: #2f55d4 !important
+    color: #093052 !important
 }
 
 .event-schedule.event-primary .date .day {
@@ -6582,11 +6582,11 @@ html[dir=rtl] .tns-visually-hidden {
 }
 
 .event-schedule.event-primary .content .title:hover {
-    color: #2f55d4 !important
+    color: #093052 !important
 }
 
 .event-schedule.event-primary:hover {
-    border-color: #2f55d4 !important
+    border-color: #093052 !important
 }
 
 .event-schedule.event-secondary .date {
@@ -6836,7 +6836,7 @@ html[dir=rtl] .tns-visually-hidden {
 }
 
 .shop-list .content .product-name:hover {
-    color: #2f55d4 !important
+    color: #093052 !important
 }
 
 .shop-list .label {
@@ -6895,7 +6895,7 @@ html[dir=rtl] .tns-visually-hidden {
     width: 12px;
     height: 12px;
     z-index: 1;
-    background-color: #2f55d4;
+    background-color: #093052;
     border-radius: 4px;
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg)
@@ -7062,8 +7062,8 @@ html[dir=rtl] .tns-visually-hidden {
 }
 
 .bg-primary-gradient-overlay {
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 85, 212, 0)), color-stop(25%, rgba(47, 85, 212, .25)), color-stop(50%, rgba(47, 85, 212, .5)), color-stop(75%, rgba(47, 85, 212, .75)), to(#2f55d4));
-    background: linear-gradient(to bottom, rgba(47, 85, 212, 0) 0, rgba(47, 85, 212, .25) 25%, rgba(47, 85, 212, .5) 50%, rgba(47, 85, 212, .75) 75%, #2f55d4 100%)
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 85, 212, 0)), color-stop(25%, rgba(47, 85, 212, .25)), color-stop(50%, rgba(47, 85, 212, .5)), color-stop(75%, rgba(47, 85, 212, .75)), to(#093052));
+    background: linear-gradient(to bottom, rgba(47, 85, 212, 0) 0, rgba(47, 85, 212, .25) 25%, rgba(47, 85, 212, .5) 50%, rgba(47, 85, 212, .75) 75%, #093052 100%)
 }
 
 .bg-gradient-white-overlay {
@@ -7673,7 +7673,7 @@ html[dir=rtl] .tns-visually-hidden {
 }
 
 .border-primary {
-    border-color: #2f55d4 !important
+    border-color: #093052 !important
 }
 
 .border-secondary {
@@ -7799,13 +7799,13 @@ small {
 }
 
 .social-icon li a:hover {
-    background-color: #2f55d4;
-    border-color: #2f55d4 !important;
+    background-color: #093052;
+    border-color: #093052 !important;
     color: #fff !important
 }
 
 .social-icon li a:hover .fea-social {
-    fill: #2f55d4
+    fill: #093052
 }
 
 .social-icon.social li a {
@@ -7831,7 +7831,7 @@ small {
     line-height: 33px;
     border-radius: 6px;
     text-align: center;
-    background: #2f55d4;
+    background: #093052;
     color: #fff !important
 }
 
@@ -7978,7 +7978,7 @@ ul.pattern li .color-list {
 }
 
 ul.pattern .color1 {
-    background-color: #2f55d4
+    background-color: #093052
 }
 
 ul.pattern .color2 {
