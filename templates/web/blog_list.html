@@ -1,0 +1,50 @@
+{% extends "web/base.html" %}
+{% load static %}
+{% block title %}Blogs{% endblock %}
+{% block content %}        
+        <!-- Hero Start -->
+        <section class="bg-half-170 bg-light d-table w-100">
+            <div class="container">
+                <div class="row mt-5 justify-content-center">
+                    <div class="col-lg-12 text-center">
+                        <div class="pages-heading">
+                            <h4 class="title mb-0"> Blogs </h4>
+                        </div>
+                    </div>  <!--end col-->
+                </div><!--end row-->
+            </div> <!--end container-->
+        </section><!--end section-->
+        <!-- Hero End -->
+
+        <!-- Shape Start -->
+        
+        <!--Shape End-->
+
+        <!-- Blog STart -->
+        <section class="section">
+            <div class="container">
+                <div class="row">
+                    {% for blog in blogs %}
+                    <div class="col-lg-4 col-md-6 mb-4 pb-2">
+                        <div class="card blog blog-primary rounded border-0 shadow overflow-hidden">
+                            <div class="position-relative">
+                                <img src="{{ blog.image.url }}" class="card-img-top" alt="...">
+                                <div class="overlay rounded-top"></div>
+                            </div>
+                            <div class="card-body content">
+                                <h5><a href="{{ blog.get_absolute_url }}" class="card-title title text-dark">{{ blog.title }}</a></h5>
+                                <div class="post-meta d-flex justify-content-between mt-3" style="flex-direction: column;">
+                                    <ul class="list-unstyled mb-0">
+                                        <li class="list-inline-item me-2 mb-0"><p>{{ blog.content|truncatewords:10|safe }}</p></li>
+                                    </ul>
+                                    <a href="{{ blog.get_absolute_url }}" class="text-muted readmore">Read More <i class="uil uil-angle-right-b align-middle"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                    {% endfor %}
+                </div><!--end row-->
+            </div><!--end container-->
+        </section><!--end section-->
+        <!-- Blog End -->
+{% endblock %}

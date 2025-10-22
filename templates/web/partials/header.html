@@ -42,7 +42,7 @@
                 <div id="navigation">
                     <!-- Navigation Menu-->   
                     <ul class="navigation-menu">
-                        <li><a href="index.html" class="sub-menu-item">Home</a></li>
+                        <li><a href="{% url 'web:index' %}" class="sub-menu-item">Home</a></li>
                         <li><a href="index.html" class="sub-menu-item">Features</a></li>
 
                         <li class="has-submenu parent-parent-menu-item">
@@ -165,7 +165,7 @@
                                 <li><a href="footer.html" class="sub-menu-item">Footer Layouts </a></li>
                             </ul>
                         </li>
-                        <li><a href="index.html" class="sub-menu-item">Blogs</a></li>
+                        <li><a href="{% url 'web:blog_list' %}" class="sub-menu-item">Blogs</a></li>
                         <li><a href="index.html" class="sub-menu-item">Contact</a></li>
 
                         <li class="has-submenu parent-menu-item">
