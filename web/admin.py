@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from .models import Banner, courses, Course,Blog
+from .models import Banner, courses, Course,Blog, Enrollment
 
 admin.site.site_header = "Radice Administration"
 admin.site.site_title = "Radice Admin Portal"
@@ -42,3 +42,10 @@ class BlogAdmin(admin.ModelAdmin):
     prepopulated_fields = {"slug": ("title",)}
 
 admin.site.register(Blog, BlogAdmin)
+
+class EnrollmentAdmin(admin.ModelAdmin):
+    list_display = ("name", "course", "email", "phone", "enrolled_at")
+    search_fields = ("name", "email", "phone", "course__title")
+    list_filter = ("enrolled_at",)
+
+admin.site.register(Enrollment, EnrollmentAdmin)

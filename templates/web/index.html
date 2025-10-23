@@ -22,7 +22,7 @@
                             </h1>
                             <p class="para-desc text-muted">{{ banner.subtitle }}</p>
                             <div class="mt-4 pt-2">
-                                <a href="page-aboutus.html" class="btn btn-primary m-1">Read More</a>
+                                <a href="#" class="btn btn-primary m-1">Read More</a>
                             </div>
                         </div>
                     </div><!--end col-->
@@ -513,9 +513,10 @@
                             <div class="position-relative">
                                 <img src="{{ b.image.url }}" class="card-img-top rounded-top" alt="...">
                                 <div class="overlay rounded-top"></div>
+                                <a href="{{ b.get_absolute_url }}" class="h6 preview bottom-0 end-0 me-4 mb-3">Preview Now <i class="uil uil-angle-right-b align-middle"></i></a>
                             </div>
                             <div class="card-body content">
-                                <h5><a href="javascript:void(0)" class="card-title title text-dark">{{ b.title }}</a></h5>
+                                <h5><a href="{{ b.get_absolute_url }}" class="card-title title text-dark">{{ b.title }}</a></h5>
                                 <div class="post-meta d-flex justify-content-between mt-3" style="flex-direction: column;">
                                     <ul class="list-unstyled mb-0">
                                         <li class="list-inline-item me-2 mb-0"><p>{{ b.content|truncatewords:10|safe }}</p></li>

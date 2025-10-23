@@ -1,6 +1,9 @@
-from django.shortcuts import render
-from django.views.generic import TemplateView, DetailView, ListView
-from .models import Banner, Blog,Course
+from django.http import JsonResponse
+from django.shortcuts import redirect, render
+from django.urls import reverse_lazy
+from django.views.generic import TemplateView, DetailView, ListView, FormView, CreateView
+from .forms import EnrollmentForm
+from .models import Banner, Blog,Course, Enrollment
 
 # Create your views here.
 class IndexView(TemplateView):
@@ -16,6 +19,14 @@ class IndexView(TemplateView):
         context['banner'] = banner
         context['blogs'] = blogs
         return context
+    
+    def post(self, request, *args, **kwargs):
+        form = EnrollmentForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect(reverse_lazy('web:index'))
+        else:
+            return JsonResponse({'success': False, 'errors': form.errors})
 
 
 # Paginated blog list

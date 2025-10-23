@@ -1,6 +1,6 @@
 /* Template Name: radice - Saas & Software Landing Page Template
-   Author: Shreethemes
-   E-mail: support@shreethemes.in
+   Author: Radice
+   E-mail: support@Radicein
    Created: August 2019
    Version: 5.0.0
    File Description: Main JS file of the template

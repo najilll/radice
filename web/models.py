@@ -48,3 +48,13 @@ class Blog(models.Model):
     
     def get_absolute_url(self):
         return reverse('web:blog_detail', args=[self.slug])
+    
+class Enrollment(models.Model):
+    course = models.ForeignKey(Course, related_name='enrollments', on_delete=models.CASCADE)
+    name = models.CharField(max_length=200)
+    email = models.EmailField(blank=True, null=True)
+    phone = models.CharField(max_length=15)
+    enrolled_at = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return f"{self.name} - {self.course.title} - {self.enrolled_at}"
