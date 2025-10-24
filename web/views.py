@@ -63,3 +63,7 @@ class CourseDetailView(DetailView):
         ctx = super().get_context_data(**kwargs)
         ctx['related_courses'] = Course.objects.exclude(pk=self.object.pk).order_by('-id')[:3]
         return ctx
+    
+
+class AboutView(TemplateView):
+    template_name = "web/about.html"

@@ -4,14 +4,13 @@
 
     <head>
         <meta charset="utf-8">
-        <title>Radice - {% block title %}{% endblock %}</title>
-        {% comment %} <title>radice - Bootstrap 5 Multipurpose App, Saas & Software Landing & Admin Dashboard Template</title> {% endcomment %}
+        <title>Radice Foundation - {% block title %}{% endblock %}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Premium Bootstrap 5 Landing Page Template">
-        <meta name="keywords" content="Saas, Software, multi-uses, HTML, Clean, Modern">
-        <meta name="author" content="Radice">
-        <meta name="email" content="support@radice.in">
-        <meta name="website" content="https://radice.in/">
+        <meta name="description" content="Premium Bootstrap 5 Landing Page Template by Radice Foundation">
+        <meta name="keywords" content="Online Courses, Education, Learning, Modern, Clean">
+        <meta name="author" content="Radice Foundation">
+        <meta name="email" content="support@radiefoundation.in">
+        <meta name="website" content="https://radiefoundation.in/">
         <meta name="Version" content="v5.0.0">
 
         <!-- favicon -->
@@ -19,12 +18,9 @@
         
         <!-- Css -->
         <link href="{% static "web/libs/tobii/css/tobii.min.css" %}" rel="stylesheet">
-        <!-- Bootstrap Css -->
         <link href="{% static "web/css/bootstrap.min.css" %}" id="bootstrap-style" class="theme-opt" rel="stylesheet" type="text/css">
-        <!-- Icons Css -->
         <link href="{% static "web/libs/%40mdi/font/css/materialdesignicons.min.css" %}" rel="stylesheet" type="text/css">
         <link href="{% static "web/libs/%40iconscout/unicons/css/line.css" %}" type="text/css" rel="stylesheet">
-        <!-- Style Css-->
         <link href="{% static "web/css/style.min.css" %}" id="color-opt" class="theme-opt" rel="stylesheet" type="text/css">
     </head>
 
@@ -37,26 +33,20 @@
         <!-- Footer Start -->
         {% include "web/partials/footer.html" %}
         <!-- Footer End -->
+
         <!-- Back to top -->
-         <!-- javascript -->
-        <!-- JAVASCRIPT -->
-         <!-- Back to top -->
         <a href="#" onclick="topFunction()" id="back-to-top" class="back-to-top fs-5"><i data-feather="arrow-up" class="fea icon-sm icons align-middle"></i></a>
-        <!-- Back to top -->
         
         <!-- jQuery library -->
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <!-- jQuery Validation plugin -->
-         <!-- SweetAlert2 (use CDN OR your static file, but not both) -->
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
         <script src="{% static "web/libs/bootstrap/js/bootstrap.bundle.min.js" %}"></script>
         <script src="{% static "web/libs/tobii/js/tobii.min.js" %}"></script>
-        <!-- Main Js -->
         <script src="{% static "web/js/custom.js" %}"></script>
         <script src="{% static "web/libs/feather-icons/feather.min.js" %}"></script>
-        <script src="{% static "web/js/plugins.init.js" %}"></script><!--Note: All init js like tiny slider, counter, countdown, maintenance, lightbox, gallery, swiper slider, aos animation etc.-->
-        <script src="{% static "web/js/app.js" %}"></script><!--Note: All important javascript like page loader, menu, sticky menu, menu-toggler, one page menu etc. -->
+        <script src="{% static "web/js/plugins.init.js" %}"></script>
+        <script src="{% static "web/js/app.js" %}"></script>
         <script src="{% static "web/js/ajax.js" %}"></script>
         <script src="{% static "web/js/sweetalert2.all.min.js" %}"></script>
     </body>
