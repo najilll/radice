@@ -35,7 +35,7 @@
                                     <ul class="list-unstyled mb-0 numbers">
                                         <li><p><span class="text-muted h6">Duration:</span> {{ course.duration }}</p></li>
                                         <li><p>{{ course.description|truncatewords:10|safe }}</p></li>
-                                        <li><h4><span class="h6">₹</span> {{ course.price }}</h4></li>
+                                        {% comment %} <li><h4><span class="h6">₹</span> {{ course.price }}</h4></li> {% endcomment %}
                                     </ul>
                                 </div>
                             </div>

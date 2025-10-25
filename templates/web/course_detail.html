@@ -61,7 +61,7 @@
                                 <h3 class="title mb-0">{{ course.title }}</h3>
                                 <ul class="list-unstyled d-flex mt-2 mb-0">
                                     <li class="me-3 text-muted"><i class="uil uil-clock"></i> {{ course.duration }}</li>
-                                    <li class="me-3 text-muted"><i class="uil uil-tag"></i> ₹{{ course.price|floatformat:2 }}</li>
+                                    {% comment %} <li class="me-3 text-muted"><i class="uil uil-tag"></i> ₹{{ course.price|floatformat:2 }}</li> {% endcomment %}
                                 </ul>
                             </div>
 
@@ -84,7 +84,7 @@
                             <h6>Course details</h6>
                             <ul>
                                 <li><strong>Duration:</strong> {{ course.duration }}</li>
-                                <li><strong>Price:</strong> ₹{{ course.price|floatformat:2 }}</li>
+                                {% comment %} <li><strong>Price:</strong> ₹{{ course.price|floatformat:2 }}</li> {% endcomment %}
                             </ul>
                         </div>
 
@@ -108,7 +108,7 @@
                                             {% endif %}
                                             <div class="card-body">
                                                 <h6 class="mb-1"><a href="{{ rc.get_absolute_url }}">{{ rc.title }}</a></h6>
-                                                <p class="mb-0 text-muted small">{{ rc.duration }} • ₹{{ rc.price|floatformat:2 }}</p>
+                                                <p class="mb-0 text-muted small">{{ rc.duration }}</p>
                                             </div>
                                         </div>
                                     </div>

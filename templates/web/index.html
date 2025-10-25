@@ -37,7 +37,7 @@
             </div>
         </section><!--end section-->
         <!-- End -->
-        <section class="py-4 border-bottom border-top">
+        {% comment %} <section class="py-4 border-bottom border-top">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-2 col-md-2 col-6 text-center py-4">
@@ -65,7 +65,7 @@
                     </div><!--end col-->
                 </div><!--end row-->
             </div><!--end container-->
-        </section>
+        </section> {% endcomment %}
         <!-- Start -->
         <section class="section overflow-hidden">
             <div class="container">
@@ -219,7 +219,7 @@
                                     <ul class="list-unstyled mb-0 numbers">
                                         <li><p><span class="text-muted h6">Duration:</span> {{ course.duration }}</p></li>
                                         <li><p>{{ course.description|truncatewords:10|safe }}</p></li>
-                                        <li><h4><span class="h6">₹</span> {{ course.price }}</h4></li>
+                                        {% comment %} <li><h4><span class="h6">₹</span> {{ course.price }}</h4></li> {% endcomment %}
                                     </ul>
                                 </div>
                             </div>
