@@ -30,7 +30,7 @@
 <section class="section">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-lg-10">
+            <div class="col-lg-12">
                 <div class="row">
                     <!-- Social share column (left) -->
                     <div class="col-md-2 d-none d-md-block">
@@ -56,66 +56,96 @@
 
                     <!-- Main content -->
                     <div class="col-md-10">
-                        <div class="mb-3 d-flex justify-content-between align-items-start flex-wrap">
-                            <div>
-                                <h3 class="title mb-0">{{ course.title }}</h3>
-                                <ul class="list-unstyled d-flex mt-2 mb-0">
-                                    <li class="me-3 text-muted"><i class="uil uil-clock"></i> {{ course.duration }}</li>
-                                    {% comment %} <li class="me-3 text-muted"><i class="uil uil-tag"></i> ₹{{ course.price|floatformat:2 }}</li> {% endcomment %}
-                                </ul>
-                            </div>
+                        <div class="card shadow rounded border-0 mb-4">
+                            <div class="card-body">
 
-                            <div class="mt-3 mt-sm-0">
-                                {# Enroll URL #}
-                                {% url 'web:enroll' course.slug as enroll_url %}
-                                <a href="{{ enroll_url|default:'#' }}" class="btn btn-primary me-2">Enroll in Radice Foundation</a>
-                                <a href="{% url 'web:course_list' %}" class="btn btn-outline-secondary">All Courses</a>
-                            </div>
-                        </div>
-
-                        <!-- Course image -->
-                        {% if course.image %}
-                            <img src="{{ course.image.url }}" class="img-fluid rounded-md shadow mb-4" alt="Radice Foundation - {{ course.title }}">
-                        {% else %}
-                            <img src="{% static 'assets/images/course-placeholder.png' %}" class="img-fluid rounded-md shadow mb-4" alt="Radice Foundation - {{ course.title }}">
-                        {% endif %}
-
-                        <div class="mt-4">
-                            <h6>Course details</h6>
-                            <ul>
-                                <li><strong>Duration:</strong> {{ course.duration }}</li>
-                                {% comment %} <li><strong>Price:</strong> ₹{{ course.price|floatformat:2 }}</li> {% endcomment %}
-                            </ul>
-                        </div>
-
-                        <!-- Course description -->
-                        <div class="content">
-                            {{ course.description|safe }}
-                        </div>
-
-                        <!-- Related courses -->
-                        {% if related_courses %}
-                        <div class="mt-5">
-                            <h5>Other Radice Foundation Courses</h5>
-                            <div class="row">
-                                {% for rc in related_courses %}
-                                    <div class="col-md-4 mt-3">
-                                        <div class="card border-0 shadow-sm">
-                                            {% if rc.image %}
-                                                <img src="{{ rc.image.url }}" class="card-img-top" alt="Radice Foundation - {{ rc.title }}">
-                                            {% else %}
-                                                <img src="{% static 'assets/images/course-placeholder.png' %}" class="card-img-top" alt="Radice Foundation - {{ rc.title }}">
-                                            {% endif %}
-                                            <div class="card-body">
-                                                <h6 class="mb-1"><a href="{{ rc.get_absolute_url }}">{{ rc.title }}</a></h6>
-                                                <p class="mb-0 text-muted small">{{ rc.duration }}</p>
-                                            </div>
-                                        </div>
+                                <div class="mb-3 d-flex justify-content-between align-items-start flex-wrap">
+                                    <div>
+                                        <h3 class="title mb-0">{{ course.title }}</h3>
+                                        <ul class="list-unstyled d-flex mt-2 mb-0">
+                                            <li class="me-3 text-muted"><i class="uil uil-clock"></i> {{ course.duration }}</li>
+                                        </ul>
                                     </div>
-                                {% endfor %}
+
+                                    <div class="mt-3 mt-sm-0">
+                                        {% url 'web:enroll' course.slug as enroll_url %}
+                                        <a href="{{ enroll_url|default:'#' }}" class="btn btn-primary me-2">Enroll in Radice Foundation</a>
+                                        <a href="{% url 'web:course_list' %}" class="btn btn-outline-secondary">All Courses</a>
+                                    </div>
+                                </div>
+
+                                {% if course.image %}
+                                    <img src="{{ course.image.url }}" class="img-fluid rounded-md shadow mb-4" alt="Radice Foundation - {{ course.title }}">
+                                {% else %}
+                                    <img src="{% static 'assets/images/course-placeholder.png' %}" class="img-fluid rounded-md shadow mb-4" alt="Radice Foundation - {{ course.title }}">
+                                {% endif %}
+
+                                <div class="mt-4">
+                                    <h6>Course details</h6>
+                                    <ul>
+                                        <li><strong>Duration:</strong> {{ course.duration }}</li>
+                                    </ul>
+                                </div>
+
+                                <div class="content">
+                                    {{ course.description|safe }}
+                                </div>
+
+                            </div><!-- end card-body -->
+                        </div><!-- end card -->
+
+                        <!-- Related / Other courses (styled like recent blogs) -->
+                        {% if related_courses %}
+                            <div class="card shadow rounded border-0 mt-5">
+                                <div class="card-body">
+                                    <h5 class="card-title mb-0">Other Radice Foundation Courses</h5>
+                                    <div class="row">
+                                        {% for rc in related_courses %}
+                                            <div class="col-lg-6 mt-4 pt-2">
+                                                <div class="card blog blog-primary rounded border-0 shadow">
+                                                    <div class="position-relative">
+                                                        {% if rc.image %}
+                                                            <img src="{{ rc.image.url }}" class="card-img-top rounded-top" alt="{{ rc.title }}">
+                                                        {% else %}
+                                                            <img src="{% static 'assets/images/course-placeholder.png' %}" class="card-img-top rounded-top" alt="{{ rc.title }}">
+                                                        {% endif %}
+                                                        <div class="overlay rounded-top"></div>
+                                                    </div>
+                                                    <div class="card-body content">
+                                                        <h5>
+                                                            <a href="{% if rc.get_absolute_url %}{{ rc.get_absolute_url }}{% else %}{% url 'web:course_detail' slug=rc.slug %}{% endif %}"
+                                                               class="card-title title text-dark">
+                                                                {{ rc.title }}
+                                                            </a>
+                                                        </h5>
+                                                        <div class="post-meta d-flex justify-content-between mt-3">
+                                                            <ul class="list-unstyled mb-0">
+                                                                <li class="list-inline-item me-2 mb-0">
+                                                                    <span class="text-muted small"><i class="uil uil-clock me-1"></i> {{ rc.duration }}</span>
+                                                                </li>
+                                                            </ul>
+                                                            <a href="{% if rc.get_absolute_url %}{{ rc.get_absolute_url }}{% else %}{% url 'web:course_detail' slug=rc.slug %}{% endif %}" class="text-muted readmore">
+                                                                View Course <i class="uil uil-angle-right-b align-middle"></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="author">
+                                                        <small class="user d-block"><i class="uil uil-user"></i> Radice Foundation</small>
+                                                        {% if rc.published_date %}
+                                                            <small class="date"><i class="uil uil-calendar-alt"></i> {{ rc.published_date|date:"jS F Y" }}</small>
+                                                        {% elif rc.created_at %}
+                                                            <small class="date"><i class="uil uil-calendar-alt"></i> {{ rc.created_at|date:"jS F Y" }}</small>
+                                                        {% endif %}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        {% endfor %}
+                                    </div>
+                                </div>
                             </div>
-                        </div>
                         {% endif %}
+                        <!-- End related courses -->
+
                     </div><!--end col-->
                 </div><!--end row-->
             </div><!--end col-->

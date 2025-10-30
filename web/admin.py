@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from .models import Banner, courses, Course,Blog, Enrollment
+from .models import Banner, courses, Course,Blog, Enrollment, Placements
 
 admin.site.site_header = "Radice Administration"
 admin.site.site_title = "Radice Admin Portal"
@@ -49,3 +49,17 @@ class EnrollmentAdmin(admin.ModelAdmin):
     list_filter = ("enrolled_at",)
 
 admin.site.register(Enrollment, EnrollmentAdmin)
+
+class PlacementsAdmin(admin.ModelAdmin):
+    list_display = ("name", "image_preview")
+    search_fields = ("name",)
+    readonly_fields = ("image_preview",)
+
+    def image_preview(self, obj):
+        if obj.image:
+            return f'<img src="{obj.image.url}" style="height:40px"/>'
+        return "-"
+    image_preview.allow_tags = True
+    image_preview.short_description = "Image"
+
+admin.site.register(Placements, PlacementsAdmin)

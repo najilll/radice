@@ -2,58 +2,125 @@
 {% load static %}
 {% block title %}Blog Details{% endblock %}
 {% block content %}
-        <!-- Hero Start -->
-        <section class="bg-half-170 d-table w-100" style="background: url('assets/images/1.jpg') center center;">
-            <div class="bg-overlay"></div>
-            <div class="container">
-                <div class="row mt-5 justify-content-center">
-                    <div class="col-lg-12 text-center">
-                        <div class="pages-heading">
-                            <h3 class="title text-white title-dark mb-0">Smartest Applications for <br>Your Learning with Radice Foundation</h3>
-                        </div>
-                    </div><!--end col-->
-                </div><!--end row-->
-                
-                <div class="position-breadcrumb">
-                    <nav aria-label="breadcrumb" class="d-inline-block">
-                        <ul class="breadcrumb rounded shadow mb-0 px-4 py-2">
-                            <li class="breadcrumb-item"><a href="{% url 'web:index' %}">Radice Foundation</a></li>
-                            <li class="breadcrumb-item"><a href="#">Blog</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Blog Details</li>
-                        </ul>
-                    </nav>
+<!-- Hero Start -->
+<section class="bg-half-170 d-table w-100" style="background: url('{% static "assets/images/1.jpg" %}') center center;">
+    <div class="bg-overlay"></div>
+    <div class="container">
+        <div class="row mt-5 justify-content-center">
+            <div class="col-lg-12 text-center">
+                <div class="pages-heading">
+                    <h3 class="title text-white title-dark mb-0">Smartest Applications for <br>Your Learning with Radice Foundation</h3>
                 </div>
-            </div> <!--end container-->
-        </section><!--end section-->
-        <!-- Hero End -->
-        
-        <section class="section">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-10">
+            </div>
+        </div>
+
+        <div class="position-breadcrumb">
+            <nav aria-label="breadcrumb" class="d-inline-block">
+                <ul class="breadcrumb rounded shadow mb-0 px-4 py-2">
+                    <li class="breadcrumb-item"><a href="{% url 'web:index' %}">Radice Foundation</a></li>
+                    <li class="breadcrumb-item"><a href="#">Blog</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Blog Details</li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</section>
+<!-- Hero End -->
+
+<section class="section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+
+                <!-- MAIN BLOG CARD (border like related section) -->
+                <div class="card shadow rounded border-0 mt-4">
+                    <div class="card-body">
                         <div class="row">
                             <div class="col-md-2 d-none d-md-block">
                                 <ul class="list-unstyled text-center sticky-bar social-icon social mb-0">
                                     <li class="mb-2 h6">Share</li>
-                                    <li class="mt-1"><a href="javascript:void(0)" class="rounded"><svg ...></svg></a></li>
-                                    <li class="mt-1"><a href="javascript:void(0)" class="rounded"><svg ...></svg></a></li>
-                                    <li class="mt-1"><a href="javascript:void(0)" class="rounded"><svg ...></svg></a></li>
-                                    <li class="mt-1"><a href="javascript:void(0)" class="rounded"><svg ...></svg></a></li>
-                                </ul><!--end icon-->
+                                    <li class="mt-1"><a href="javascript:void(0)" class="rounded"><i class="uil uil-facebook-f"></i></a></li>
+                                    <li class="mt-1"><a href="javascript:void(0)" class="rounded"><i class="uil uil-twitter"></i></a></li>
+                                    <li class="mt-1"><a href="javascript:void(0)" class="rounded"><i class="uil uil-linkedin"></i></a></li>
+                                    <li class="mt-1"><a href="javascript:void(0)" class="rounded"><i class="uil uil-whatsapp"></i></a></li>
+                                </ul>
                             </div>
-        
+
                             <div class="col-md-10">
                                 <h3 class="title mb-3">{{ blog.title }}</h3>
                                 <ul class="list-unstyled d-flex justify-content-between mt-4">
-                                    <li class="list-inline-item user me-2"><a href="javascript:void(0)" class="text-muted"><i class="uil uil-user text-dark"></i> Radice Foundation Team</a></li>
-                                    <li class="list-inline-item date text-muted"><i class="uil uil-calendar-alt text-dark"></i> 25th June 2021</li>
+                                    <li class="list-inline-item user me-2">
+                                        <a href="javascript:void(0)" class="text-muted">
+                                            <i class="uil uil-user text-dark"></i> Radice Foundation Team
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item date text-muted">
+                                        <i class="uil uil-calendar-alt text-dark"></i>
+                                        {% if blog.published_date %}{{ blog.published_date|date:"jS F Y" }}
+                                        {% elif blog.created_at %}{{ blog.created_at|date:"jS F Y" }}
+                                        {% else %}{{ blog.id }}{% endif %}
+                                    </li>
                                 </ul>
-                                <img src="{{ blog.image.url }}" class="img-fluid rounded-md shadow" alt="Blog Image">
-                                <h5 class="mt-4">{{ blog.content|safe }}</h5>
+
+                                {% if blog.image %}
+                                    <img src="{{ blog.image.url }}" class="img-fluid rounded-md shadow" alt="Blog Image">
+                                {% else %}
+                                    <img src="{% static 'assets/images/blog/default.jpg' %}" class="img-fluid rounded-md shadow" alt="Blog Image">
+                                {% endif %}
+
+                                <div class="mt-4">
+                                    {{ blog.content|safe }}
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <!-- END MAIN BLOG CARD -->
+
+                <!-- RECENT POSTS (dynamic) -->
+                <div class="card shadow rounded border-0 mt-4">
+                    <div class="card-body">
+                        <h5 class="card-title mb-0">Recent Posts :</h5>
+                        <div class="row">
+                            {% for recent in recent_blogs %}
+                            <div class="col-lg-6 mt-4 pt-2">
+                                <div class="card blog blog-primary rounded border-0 shadow">
+                                    <div class="position-relative">
+                                        {% if recent.image %}
+                                            <img src="{{ recent.image.url }}" class="card-img-top rounded-top" alt="{{ recent.title }}">
+                                        {% else %}
+                                            <img src="{% static 'assets/images/blog/01.jpg' %}" class="card-img-top rounded-top" alt="{{ recent.title }}">
+                                        {% endif %}
+                                        <div class="overlay rounded-top"></div>
+                                    </div>
+                                    <div class="card-body content">
+                                        <h5>
+                                            <a href="{% if recent.get_absolute_url %}{{ recent.get_absolute_url }}{% else %}{% url 'web:blog_detail' slug=recent.slug %}{% endif %}"
+                                               class="card-title title text-dark">
+                                                {{ recent.title }}
+                                            </a>
+                                        </h5>
+                                        <div class="post-meta d-flex justify-content-between mt-3" style="flex-direction: column;">
+                                            <ul class="list-unstyled mb-0">
+                                                <li class="list-inline-item me-2 mb-0"><p>{{ recent.content|truncatewords:10|safe }}</p></li>
+                                            </ul>
+                                            <a href="{{ recent.get_absolute_url }}" class="text-muted readmore">Read More <i class="uil uil-angle-right-b align-middle"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {% empty %}
+                                <div class="col-12 mt-3">
+                                    <p class="text-muted">No recent posts available.</p>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+                <!-- END RECENT POSTS -->
+
             </div>
-        </section>        
+        </div>
+    </div>
+</section>
 {% endblock %}

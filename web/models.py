@@ -58,3 +58,10 @@ class Enrollment(models.Model):
 
     def __str__(self):
         return f"{self.name} - {self.course.title} - {self.enrolled_at}"
+    
+class Placements(models.Model):
+    name = models.CharField(max_length=200)
+    image = models.ImageField(upload_to='placements/',help_text="Upload placement image here size(360x420)")
+
+    def __str__(self):
+        return self.name  

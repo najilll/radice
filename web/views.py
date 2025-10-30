@@ -3,7 +3,7 @@ from django.shortcuts import redirect, render
 from django.urls import reverse_lazy
 from django.views.generic import TemplateView, DetailView, ListView, FormView, CreateView
 from .forms import EnrollmentForm
-from .models import Banner, Blog,Course, Enrollment
+from .models import Banner, Blog,Course, Enrollment, Placements
 
 # Create your views here.
 class IndexView(TemplateView):
@@ -36,7 +36,7 @@ class BlogListView(ListView):
     context_object_name = "blogs"  # what template uses
     ordering = ['-published_date']  # newest first
 
-
+from django.core.exceptions import FieldError
 class BlogDetailView(DetailView):
     model = Blog
     template_name = "web/blog_detail.html"
@@ -44,6 +44,24 @@ class BlogDetailView(DetailView):
     slug_field = "slug"
     slug_url_kwarg = "slug"
 
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+
+        # exclude current blog from recent list
+        qs = Blog.objects.exclude(pk=self.object.pk)
+
+        # try common date fields to order recent posts robustly
+        try:
+            recent = qs.order_by('-published_date')[:4]
+        except FieldError:
+            try:
+                recent = qs.order_by('-created_at')[:4]
+            except FieldError:
+                # final fallback
+                recent = qs.order_by('-id')[:4]
+
+        context['recent_blogs'] = recent
+        return context
 
 class CourseListView(ListView):
     model = Course
@@ -67,3 +85,9 @@ class CourseDetailView(DetailView):
 
 class AboutView(TemplateView):
     template_name = "web/about.html"
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context["placements"] = Placements.objects.all() 
+        return context
+    
