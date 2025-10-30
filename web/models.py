@@ -21,7 +21,7 @@ class courses(models.Model):
 class Course(models.Model):
     title = models.CharField(max_length=200)
     slug = models.SlugField(max_length=200, unique=True)
-    image = models.ImageField(upload_to='courses/')
+    image = models.ImageField(upload_to='courses/',help_text="Upload course image here size(356x267)")
     description = HTMLField()
     duration = models.CharField(max_length=100)
     price = models.DecimalField(max_digits=6, decimal_places=2)
@@ -35,7 +35,7 @@ class Course(models.Model):
 class Blog(models.Model):
     title = models.CharField(max_length=200)
     slug = models.SlugField(max_length=200, unique=True)
-    image = models.ImageField(upload_to='blogs/')
+    image = models.ImageField(upload_to='blogs/',help_text="Upload blog image here size(356x267)")
     content = HTMLField()
     published_date = models.DateTimeField(auto_now_add=True)
     is_home = models.BooleanField(default=False)
