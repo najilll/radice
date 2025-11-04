@@ -10,7 +10,7 @@
                         <div class="title-heading">
                             <h1 class="display-4 fw-bold mb-4">
                                 {{ banner.title }} <br> 
-                                <span class="text-primary text-decoration-underline fw-bold typewrite" 
+                                <span class="text-primary fw-bold typewrite" 
                                     data-period="2000" 
                                     data-type='[
                                         {% for course in banner.courses.all %}
@@ -233,7 +233,7 @@
                 </div><!--end row-->
             </div><!--end container-->
 
-            <div class="container mt-100 mt-60" id="instructors">
+            {% comment %} <div class="container mt-100 mt-60" id="instructors">
                 <div class="row justify-content-center">
                     <div class="col-12 text-center">
                         <div class="section-title mb-4 pb-2">
@@ -324,7 +324,7 @@
                         </div>
                     </div><!--end col-->
                 </div><!--end row-->
-            </div><!--end container-->
+            </div><!--end container--> {% endcomment %}
         </section>
         <section class="section">
             <div class="container">

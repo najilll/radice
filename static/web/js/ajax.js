@@ -66,6 +66,7 @@
 var isLoading = false;
 
 $(document).on("submit", "form.ajax", function (e) {
+    console.log(e)
     e.preventDefault();
     var $this = $(this),
         data = new FormData(this),

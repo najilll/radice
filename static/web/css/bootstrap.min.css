@@ -82,9 +82,9 @@
     --bs-dark-border-subtle: #adb5bd;
     --bs-white-rgb: 255, 255, 255;
     --bs-black-rgb: 0, 0, 0;
-    --bs-font-sans-serif: "Nunito", sans-serif;
+    --bs-font-sans-serif: "Inter", "Helvetica Neue", Arial, sans-serif;
     --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-    --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+--bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
     --bs-body-font-family: var(--bs-font-sans-serif);
     --bs-body-font-size: 1rem;
     --bs-body-font-weight: 400;
@@ -3839,6 +3839,14 @@ fieldset:disabled .btn {
 }
 
 .btn-primary {
+  background-image: linear-gradient(90deg, rgba(92,0,212,1) 20%, rgba(200,42,255,1) 81%) !important;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  border: none;          /* optional */
+  color: #fff;           /* make text readable */
+}
+
+/* .btn-primary {
     --bs-btn-color: #ffffff;
     --bs-btn-bg: #093052;
     --bs-btn-border-color: #093052;
@@ -3853,7 +3861,7 @@ fieldset:disabled .btn {
     --bs-btn-disabled-color: #ffffff;
     --bs-btn-disabled-bg: #093052;
     --bs-btn-disabled-border-color: #093052
-}
+} */
 
 .btn-secondary {
     --bs-btn-color: #ffffff;
@@ -15683,7 +15691,7 @@ label {
 }
 
 .text-primary {
-    color: #093052 !important
+    color: #9c50ff !important
 }
 
 a.text-primary:focus,

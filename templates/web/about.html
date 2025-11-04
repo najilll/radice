@@ -313,7 +313,7 @@
       </div>
     </div>
 
-    <div class="row justify-content-center">
+    <div class="row justify-content-center" style="overflow-x: hidden;">
       <div class="col-lg-10 col-12">
         <div class="team-carousel-wrapper">
           <div class="team-main">
@@ -331,27 +331,6 @@
                         </div>
                     {% endfor %}
                 </div>
-
-                {% comment %} <div class="carousel-track" role="list">
-                  <div class="card" data-index="0" role="listitem" tabindex="0">
-                    <img src="https://ik.imagekit.io/gopichakradhar/luffy/o1.jpeg?updatedAt=1754289569411" alt="Luffy — Founder">
-                  </div>
-                  <div class="card" data-index="1" role="listitem" tabindex="0">
-                    <img src="https://ik.imagekit.io/gopichakradhar/luffy/o2.jpeg?updatedAt=1754289569307" alt="Monkey D. Luffy — Creative Director">
-                  </div>
-                  <div class="card" data-index="2" role="listitem" tabindex="0">
-                    <img src="https://ik.imagekit.io/gopichakradhar/luffy/o4.jpeg?updatedAt=1754289569398" alt="Luffy chan — Lead Developer">
-                  </div>
-                  <div class="card" data-index="3" role="listitem" tabindex="0">
-                    <img src="https://ik.imagekit.io/gopichakradhar/luffy/o3.jpeg?updatedAt=1754289569422" alt="Lucy — UX Designer">
-                  </div>
-                  <div class="card" data-index="4" role="listitem" tabindex="0">
-                    <img src="https://ik.imagekit.io/gopichakradhar/luffy/o5.jpeg?updatedAt=1754289569406" alt="Luffy kun — Marketing Manager">
-                  </div>
-                  <div class="card" data-index="5" role="listitem" tabindex="0">
-                    <img src="https://ik.imagekit.io/gopichakradhar/luffy/o6.jpeg?updatedAt=1754289569438" alt="Monkey chan — Product Manager">
-                  </div>
-                </div> {% endcomment %}
 
                 <!-- Right arrow (next) -->
                 <button class="nav-arrow next" type="button" aria-label="Next member" title="Next member">
@@ -474,12 +453,7 @@
     if (!section) return;
 
     const teamMembers = [
-      { name: "Luffy", role: "Founder" },
-      { name: "Monkey D. Luffy", role: "Creative Director" },
-      { name: "Luffy chan", role: "Lead Developer" },
-      { name: "Lucy", role: "UX Designer" },
-      { name: "Luffy kun", role: "Marketing Manager" },
-      { name: "Monkey chan", role: "Product Manager" }
+      
     ];
 
     const cards = Array.from(section.querySelectorAll('.card'));

@@ -69,8 +69,8 @@
 
                                     <div class="mt-3 mt-sm-0">
                                         {% url 'web:enroll' course.slug as enroll_url %}
-                                        <a href="{{ enroll_url|default:'#' }}" class="btn btn-primary me-2">Enroll in Radice Foundation</a>
-                                        <a href="{% url 'web:course_list' %}" class="btn btn-outline-secondary">All Courses</a>
+                                        <a href="{{ enroll_url|default:'#' }}" class="btn btn-primary me-2 mt-2 mt-sm-0" data-bs-toggle="modal" data-bs-target="#exampleModal">Enroll in Radice Foundation</a>
+                                        <a href="{% url 'web:course_list' %}" class="btn btn-outline-secondary mt-2 mt-sm-0">All Courses</a>
                                     </div>
                                 </div>
 

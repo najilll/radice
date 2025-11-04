@@ -4,6 +4,7 @@ from django.urls import reverse_lazy
 from django.views.generic import TemplateView, DetailView, ListView, FormView, CreateView
 from .forms import EnrollmentForm
 from .models import Banner, Blog,Course, Enrollment, Placements
+from urllib.parse import quote
 
 # Create your views here.
 class IndexView(TemplateView):
@@ -24,7 +25,27 @@ class IndexView(TemplateView):
         form = EnrollmentForm(request.POST)
         if form.is_valid():
             form.save()
-            return redirect(reverse_lazy('web:index'))
+            
+            whatsapp_number = "+919961053000"  # Replace with actual number
+
+            # Construct message text
+            message = (
+                f"New Enrollment Enquiry Submission:\n"
+                f"Course: {form.cleaned_data['course']}\n"
+                f"Name: {form.cleaned_data['name']}\n"
+                f"Email: {form.cleaned_data['email']}\n"
+                f"Phone: {form.cleaned_data['phone']}"
+            )
+
+            # Encode message for URL
+            encoded_message = quote(message)
+
+            # Construct WhatsApp API URL
+            api_url = f"https://api.whatsapp.com/send?phone={whatsapp_number}&text={encoded_message}"
+
+            # Redirect to WhatsApp
+            return redirect(api_url)
+
         else:
             return JsonResponse({'success': False, 'errors': form.errors})
 
