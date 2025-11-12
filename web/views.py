@@ -100,7 +100,7 @@ class CourseDetailView(DetailView):
 
     def get_context_data(self, **kwargs):
         ctx = super().get_context_data(**kwargs)
-        ctx['related_courses'] = Course.objects.exclude(pk=self.object.pk).order_by('-id')[:3]
+        ctx['related_courses'] = Course.objects.exclude(pk=self.object.pk).order_by('-id')[:2]
         return ctx
     
 
