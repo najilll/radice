@@ -1,6 +1,8 @@
 from django.contrib import admin
 
-from .models import Banner, courses, Course,Blog, Enrollment, Placements
+from .models import Banner, courses, Course,Blog, Enrollment, Placements,WhatsAppNumber
+
+# Register your models here.
 
 admin.site.site_header = "Radice Administration"
 admin.site.site_title = "Radice Admin Portal"
@@ -63,3 +65,8 @@ class PlacementsAdmin(admin.ModelAdmin):
     image_preview.short_description = "Image"
 
 admin.site.register(Placements, PlacementsAdmin)
+
+class WhatsAppNumberAdmin(admin.ModelAdmin):
+    list_display = ("number",)
+
+admin.site.register(WhatsAppNumber, WhatsAppNumberAdmin)

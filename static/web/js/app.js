@@ -1,6 +1,6 @@
 /* Template Name: radice - Saas & Software Landing Page Template
    Author: Radice
-   E-mail: support@Radicein
+   E-mail: radicefoundation8@gmail.com
    Created: August 2019
    Version: 5.0.0
    File Description: Main JS file of the template

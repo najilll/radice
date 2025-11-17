@@ -3,13 +3,13 @@
 {% block title %}Blog Details{% endblock %}
 {% block content %}
 <!-- Hero Start -->
-<section class="bg-half-170 d-table w-100" style="background: url('{% static "assets/images/1.jpg" %}') center center;">
-    <div class="bg-overlay"></div>
+<section class="bg-half-170 d-table bg-light w-100" style="background: url('{% static "assets/images/1.jpg" %}') center center;">
+    {% comment %} <div class="bg-overlay"></div> {% endcomment %}
     <div class="container">
         <div class="row mt-5 justify-content-center">
             <div class="col-lg-12 text-center">
                 <div class="pages-heading">
-                    <h3 class="title text-white title-dark mb-0">Smartest Applications for <br>Your Learning with Radice Foundation</h3>
+                    <h3 class="title title-dark mb-0">Smartest Applications for <br>Your Learning with Radice Academy</h3>
                 </div>
             </div>
         </div>
@@ -17,7 +17,7 @@
         <div class="position-breadcrumb">
             <nav aria-label="breadcrumb" class="d-inline-block">
                 <ul class="breadcrumb rounded shadow mb-0 px-4 py-2">
-                    <li class="breadcrumb-item"><a href="{% url 'web:index' %}">Radice Foundation</a></li>
+                    <li class="breadcrumb-item"><a href="{% url 'web:index' %}">Radice Academy</a></li>
                     <li class="breadcrumb-item"><a href="#">Blog</a></li>
                     <li class="breadcrumb-item active" aria-current="page">Blog Details</li>
                 </ul>
@@ -42,7 +42,9 @@
                                     <li class="mt-1"><a href="javascript:void(0)" class="rounded"><i class="uil uil-facebook-f"></i></a></li>
                                     <li class="mt-1"><a href="javascript:void(0)" class="rounded"><i class="uil uil-twitter"></i></a></li>
                                     <li class="mt-1"><a href="javascript:void(0)" class="rounded"><i class="uil uil-linkedin"></i></a></li>
-                                    <li class="mt-1"><a href="javascript:void(0)" class="rounded"><i class="uil uil-whatsapp"></i></a></li>
+                                    {% if number %}
+                                    <li class="mt-1"><a href="https://api.whatsapp.com/send?phone={{number}}" target="_blank" class="rounded"><i class="uil uil-whatsapp"></i></a></li>
+                                    {% endif %}
                                 </ul>
                             </div>
 
@@ -51,7 +53,7 @@
                                 <ul class="list-unstyled d-flex justify-content-between mt-4">
                                     <li class="list-inline-item user me-2">
                                         <a href="javascript:void(0)" class="text-muted">
-                                            <i class="uil uil-user text-dark"></i> Radice Foundation Team
+                                            <i class="uil uil-user text-dark"></i> Radice Academy Team
                                         </a>
                                     </li>
                                     <li class="list-inline-item date text-muted">

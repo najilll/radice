@@ -3,7 +3,7 @@ from django.shortcuts import redirect, render
 from django.urls import reverse_lazy
 from django.views.generic import TemplateView, DetailView, ListView, FormView, CreateView
 from .forms import EnrollmentForm
-from .models import Banner, Blog,Course, Enrollment, Placements
+from .models import Banner, Blog,Course, Enrollment, Placements,WhatsAppNumber
 from urllib.parse import quote
 
 # Create your views here.
@@ -23,10 +23,13 @@ class IndexView(TemplateView):
     
     def post(self, request, *args, **kwargs):
         form = EnrollmentForm(request.POST)
+        number = WhatsAppNumber.objects.first()
+        if not number:
+            return JsonResponse({'success': False, 'error': 'WhatsApp number not configured.'})
         if form.is_valid():
             form.save()
             
-            whatsapp_number = "+919961053000"  # Replace with actual number
+            whatsapp_number = number.number # Replace with actual number
 
             # Construct message text
             message = (
@@ -67,7 +70,8 @@ class BlogDetailView(DetailView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-
+        
+        number = WhatsAppNumber.objects.first()
         # exclude current blog from recent list
         qs = Blog.objects.exclude(pk=self.object.pk)
 
@@ -82,6 +86,7 @@ class BlogDetailView(DetailView):
                 recent = qs.order_by('-id')[:4]
 
         context['recent_blogs'] = recent
+        context['number'] = number
         return context
 
 class CourseListView(ListView):

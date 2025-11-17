@@ -65,3 +65,12 @@ class Placements(models.Model):
 
     def __str__(self):
         return self.name  
+    
+class WhatsAppNumber(models.Model):
+    number = models.CharField(max_length=15, help_text="Enter WhatsApp number in international format, e.g., +9191234567890",default="+91")
+
+    class Meta:
+        verbose_name_plural = "WhatsApp Number For Enrollment"
+
+    def __str__(self):
+        return self.number

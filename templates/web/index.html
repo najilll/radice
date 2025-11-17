@@ -21,7 +21,7 @@
                             </h1>
                             <p class="para-desc text-muted">{{ banner.subtitle }}</p>
                             <div class="mt-4 pt-2">
-                                <a href="#" class="btn btn-primary m-1">Read More</a>
+                                <a href="{% url "web:about" %}" class="btn btn-primary m-1">Read More</a>
                             </div>
                         </div>
                     </div><!--end col-->
@@ -36,72 +36,22 @@
                 </div><!--end row-->
             </div>
         </section><!--end section-->
-        <!-- End -->
-        {% comment %} <section class="py-4 border-bottom border-top">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-2 col-md-2 col-6 text-center py-4">
-                        <img src="{% static "web/images/client/amazon.svg" %}" class="avatar avatar-ex-sm" alt="">
-                    </div><!--end col-->
-
-                    <div class="col-lg-2 col-md-2 col-6 text-center py-4">
-                        <img src="{% static "web/images/client/google.svg" %}" class="avatar avatar-ex-sm" alt="">
-                    </div><!--end col-->
-                    
-                    <div class="col-lg-2 col-md-2 col-6 text-center py-4">
-                        <img src="{% static "web/images/client/lenovo.svg" %}" class="avatar avatar-ex-sm" alt="">
-                    </div><!--end col-->
-                    
-                    <div class="col-lg-2 col-md-2 col-6 text-center py-4">
-                        <img src="{% static "web/images/client/paypal.svg" %}" class="avatar avatar-ex-sm" alt="">
-                    </div><!--end col-->
-                    
-                    <div class="col-lg-2 col-md-2 col-6 text-center py-4">
-                        <img src="{% static "web/images/client/shopify.svg" %}" class="avatar avatar-ex-sm" alt="">
-                    </div><!--end col-->
-                    
-                    <div class="col-lg-2 col-md-2 col-6 text-center py-4">
-                        <img src="{% static "web/images/client/spotify.svg" %}" class="avatar avatar-ex-sm" alt="">
-                    </div><!--end col-->
-                </div><!--end row-->
-            </div><!--end container-->
-        </section> {% endcomment %}
         <!-- Start -->
         <section class="section overflow-hidden">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-5 col-md-6">
-                        <div class="modern-app-bg-shape position-relative">
-                            {% comment %} <div class="px-4">
-                                <img src="{% static "web/images/programming/3.jpg" %}" class="img-fluid mx-auto d-block rounded-md shadow" alt="">
-                            </div> {% endcomment %}
-                            
-                            {% comment %} <div class="modern-saas-absolute-right">
-                                <div class="card">
-                                    <div class="features feature-primary d-flex justify-content-between align-items-center rounded shadow p-3">
-                                        <div class="icon bg-soft-primary text-center rounded-pill">
-                                            <i class="uil uil-arrow fs-4 mb-0"></i>
-                                        </div>
-                                        <div class="flex-1 ms-2">
-                                            <h6 class="mb-0 text-muted">Lines of Code</h6>
-                                            <p class="fs-5 text-dark fw-bold mb-0"><span class="counter-value" data-target="48575">45968</span></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> {% endcomment %}
-
-                            {% comment %} <div class="position-absolute top-0 start-0">
-                                <a href="#!" data-type="youtube" data-id="yba7hPeTSjk" class="avatar avatar-md-md rounded-pill shadow-md card bg-primary d-flex justify-content-center align-items-center lightbox">
-                                    <i class="mdi mdi-play fs-4 text-white"></i>
-                                </a>
-                            </div> {% endcomment %}
+                        <div class="position-relative">
+                            <div class="px-4">
+                                <img src="{% static "web/_images/grow_02.jpeg" %}" class="img-fluid mx-auto d-block rounded-md" alt="">
+                            </div> 
                         </div>
                     </div><!--end col-->
 
                     <div class="col-lg-7 col-md-6 mt-4 pt-2 mt-sm-0 pt-sm-0">
                         <div class="section-title ms-lg-5">
-                            <h4 class="title mb-4">High-Quality Learning & <br> Student Support from <br> Radice Foundation</h4>
-                            <p class="text-muted">Radice Foundation delivers trusted online learning—combining expert tutors, structured courses, and active mentoring to help learners succeed.</p>
+                            <h4 class="title mb-4">High-Quality Learning & <br> Student Support from <br> Radice Academy</h4>
+                            <p class="text-muted">Radice Academy delivers trusted online learning—combining expert tutors, structured courses, and active mentoring to help learners succeed.</p>
 
                             <ul class="list-unstyled text-muted">
                                 <li class="mb-1"><span class="text-primary h5 me-2"><i class="uil uil-check-circle align-middle"></i></span>Expert Tutors: Dedicated instructors who guide and mentor students.</li>
@@ -119,7 +69,7 @@
                     <div class="col-12 text-center">
                         <div class="section-title mb-4 pb-2">
                             <h4 class="title mb-4">Our Programmes</h4>
-                            <p class="text-muted para-desc mb-0 mx-auto">Radice Foundation offers structured courses and support across school, college-prep, and professional learning paths.</p>
+                            <p class="text-muted para-desc mb-0 mx-auto">Radice Academy offers structured courses and support across school, college-prep, and professional learning paths.</p>
                         </div>
                     </div><!--end col-->
                 </div><!--end row-->
@@ -132,7 +82,7 @@
                             </span>
                             <div class="card-body p-0 content">
                                 <h5>K–12 Support</h5>
-                                <p class="para text-muted mb-0">Homework help, concept lessons, and exam prep for school students.</p>
+                                <p class="para text-muted mb-0">Homework help, concept lessons, and exam preparation for school students.</p>
                             </div>
                             <span class="big-icon text-center">
                                 {% comment %} <i class="uil uil-chart-line"></i> {% endcomment %}
@@ -177,7 +127,7 @@
                             </span>
                             <div class="card-body p-0 content">
                                 <h5>Skill Workshops</h5>
-                                <p class="para text-muted mb-0">Short hands-on workshops to develop practical skills and confidence.</p>
+                                <p class="para text-muted mb-0">Short hands-on workshops to develop practical skills.</p>
                             </div>
                             <span class="big-icon text-center">
                                 {% comment %} <i class="uil uil-rocket"></i> {% endcomment %}
@@ -198,7 +148,7 @@
                     <div class="col-12 text-center">
                         <div class="section-title mb-4 pb-2">
                             <h4 class="title mb-4">Explore Popular Courses</h4>
-                            <p class="text-muted para-desc mx-auto mb-0">Start working with <span class="text-primary fw-bold">Landrick</span> that can provide everything you need to generate awareness, drive traffic, connect.</p>
+                            <p class="text-muted para-desc mx-auto mb-0">Start working with <span class="text-primary fw-bold">Radice Academy</span> courses today and take your skills to the next level.</p>
                         </div>
                     </div><!--end col-->
                 </div><!--end row-->
@@ -232,99 +182,6 @@
                     </div>
                 </div><!--end row-->
             </div><!--end container-->
-
-            {% comment %} <div class="container mt-100 mt-60" id="instructors">
-                <div class="row justify-content-center">
-                    <div class="col-12 text-center">
-                        <div class="section-title mb-4 pb-2">
-                            <h4 class="title mb-4">Instructors</h4>
-                            <p class="text-muted para-desc mx-auto mb-0">Start working with <span class="text-primary fw-bold">Landrick</span> that can provide everything you need to generate awareness, drive traffic, connect.</p>
-                        </div>
-                    </div><!--end col-->
-                </div><!--end row-->
-
-                <div class="row">
-                    <div class="col-lg-3 col-md-6 mt-4 pt-2">
-                        <div class="card team team-primary text-center rounded border-0">
-                            <div class="card-body">
-                                <div class="position-relative">
-                                    <img src="web/images/client/01.jpg" class="img-fluid avatar avatar-ex-large rounded-circle shadow" alt="">
-                                    <ul class="list-unstyled mb-0 team-icon">
-                                        <li class="list-inline-item"><a href="javascript:void(0)" class="btn btn-primary btn-pills btn-sm btn-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-facebook icons"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a></li>
-                                        <li class="list-inline-item"><a href="javascript:void(0)" class="btn btn-primary btn-pills btn-sm btn-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram icons"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a></li>
-                                        <li class="list-inline-item"><a href="javascript:void(0)" class="btn btn-primary btn-pills btn-sm btn-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter icons"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a></li>
-                                        <li class="list-inline-item"><a href="javascript:void(0)" class="btn btn-primary btn-pills btn-sm btn-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin icons"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a></li>
-                                    </ul><!--end icon-->
-                                </div>
-                                <div class="content pt-3">
-                                    <h5 class="mb-0"><a href="javascript:void(0)" class="name text-dark">Ronny Jofra</a></h5>
-                                    <small class="designation text-muted">UI Designers</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div><!--end col-->
-
-                    <div class="col-lg-3 col-md-6 mt-4 pt-2">
-                        <div class="card team team-primary text-center rounded border-0">
-                            <div class="card-body">
-                                <div class="position-relative">
-                                    <img src="web/images/client/04.jpg" class="img-fluid avatar avatar-ex-large rounded-circle shadow" alt="">
-                                    <ul class="list-unstyled mb-0 team-icon">
-                                        <li class="list-inline-item"><a href="javascript:void(0)" class="btn btn-primary btn-pills btn-sm btn-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-facebook icons"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a></li>
-                                        <li class="list-inline-item"><a href="javascript:void(0)" class="btn btn-primary btn-pills btn-sm btn-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram icons"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a></li>
-                                        <li class="list-inline-item"><a href="javascript:void(0)" class="btn btn-primary btn-pills btn-sm btn-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter icons"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a></li>
-                                        <li class="list-inline-item"><a href="javascript:void(0)" class="btn btn-primary btn-pills btn-sm btn-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin icons"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a></li>
-                                    </ul><!--end icon-->
-                                </div>
-                                <div class="content pt-3">
-                                    <h5 class="mb-0"><a href="javascript:void(0)" class="name text-dark">Micheal Carlo</a></h5>
-                                    <small class="designation text-muted">UX Designer</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div><!--end col-->
-                    
-                    <div class="col-lg-3 col-md-6 mt-4 pt-2">
-                        <div class="card team team-primary text-center rounded border-0">
-                            <div class="card-body">
-                                <div class="position-relative">
-                                    <img src="web/images/client/03.jpg" class="img-fluid avatar avatar-ex-large rounded-circle shadow" alt="">
-                                    <ul class="list-unstyled mb-0 team-icon">
-                                        <li class="list-inline-item"><a href="javascript:void(0)" class="btn btn-primary btn-pills btn-sm btn-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-facebook icons"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a></li>
-                                        <li class="list-inline-item"><a href="javascript:void(0)" class="btn btn-primary btn-pills btn-sm btn-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram icons"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a></li>
-                                        <li class="list-inline-item"><a href="javascript:void(0)" class="btn btn-primary btn-pills btn-sm btn-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter icons"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a></li>
-                                        <li class="list-inline-item"><a href="javascript:void(0)" class="btn btn-primary btn-pills btn-sm btn-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin icons"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a></li>
-                                    </ul><!--end icon-->
-                                </div>
-                                <div class="content pt-3">
-                                    <h5 class="mb-0"><a href="javascript:void(0)" class="name text-dark">Aliana Rosy</a></h5>
-                                    <small class="designation text-muted">Web Developer</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div><!--end col-->
-                    
-                    <div class="col-lg-3 col-md-6 mt-4 pt-2">
-                        <div class="card team team-primary text-center rounded border-0">
-                            <div class="card-body">
-                                <div class="position-relative">
-                                    <img src="web/images/client/02.jpg" class="img-fluid avatar avatar-ex-large rounded-circle shadow" alt="">
-                                    <ul class="list-unstyled mb-0 team-icon">
-                                        <li class="list-inline-item"><a href="javascript:void(0)" class="btn btn-primary btn-pills btn-sm btn-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-facebook icons"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a></li>
-                                        <li class="list-inline-item"><a href="javascript:void(0)" class="btn btn-primary btn-pills btn-sm btn-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram icons"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a></li>
-                                        <li class="list-inline-item"><a href="javascript:void(0)" class="btn btn-primary btn-pills btn-sm btn-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter icons"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a></li>
-                                        <li class="list-inline-item"><a href="javascript:void(0)" class="btn btn-primary btn-pills btn-sm btn-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin icons"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a></li>
-                                    </ul><!--end icon-->
-                                </div>
-                                <div class="content pt-3">
-                                    <h5 class="mb-0"><a href="javascript:void(0)" class="name text-dark">Sofia Razaq</a></h5>
-                                    <small class="designation text-muted">Web Designer</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div><!--end col-->
-                </div><!--end row-->
-            </div><!--end container--> {% endcomment %}
         </section>
         <section class="section">
             <div class="container">
@@ -332,7 +189,7 @@
                     <div class="col-12 text-center">
                         <div class="section-title mb-4 pb-2">
                             <h4 class="title mb-4">Frequently Asked Questions</h4>
-                            <p class="text-muted para-desc mb-0 mx-auto">Find answers to the most common questions about <span class="text-primary fw-bold">Radice Foundation</span> courses, admissions, and learning experience.</p>
+                            <p class="text-muted para-desc mb-0 mx-auto">Find answers to the most common questions about <span class="text-primary fw-bold">Radice Academy</span> courses, admissions, and learning experience.</p>
                         </div>
                     </div><!--end col-->
                 </div><!--end row-->
@@ -367,7 +224,7 @@
                                         <div id="collapseTwo" class="accordion-collapse border-0 collapse" aria-labelledby="headingTwo"
                                             data-bs-parent="#buyingquestion">
                                             <div class="accordion-body text-muted">
-                                                Radice Foundation provides both live interactive sessions and access to recorded lessons, allowing you to learn at your own pace while staying connected with instructors.
+                                                Radice Academy provides both live interactive sessions and access to recorded lessons, allowing you to learn at your own pace while staying connected with instructors.
                                             </div>
                                         </div>
                                     </div>
@@ -382,7 +239,7 @@
                                         <div id="collapseThree" class="accordion-collapse border-0 collapse" aria-labelledby="headingThree"
                                             data-bs-parent="#buyingquestion">
                                             <div class="accordion-body text-muted">
-                                                Yes! Upon successful completion of any Radice Foundation course, you will receive a verified digital certificate that can be shared on LinkedIn or added to your resume.
+                                                Yes! Upon successful completion of any Radice Academy course, you will receive a verified digital certificate that can be shared on LinkedIn or added to your resume.
                                             </div>
                                         </div>
                                     </div>
@@ -479,7 +336,7 @@
                     </div><!--end col-->
                     
                     <div class="col-md-6 text-md-start text-center">
-                        <p class="text-muted para-desc mb-0 mx-auto">Stay updated with <span class="text-primary fw-bold">Radice Foundation</span> news, success stories, educational tips, and updates on new courses and events.</p>
+                        <p class="text-muted para-desc mb-0 mx-auto">Stay updated with <span class="text-primary fw-bold">Radice Academy</span> news, success stories, educational tips, and updates on new courses and events.</p>
                     </div><!--end col-->
                 </div><!--end row-->
             
