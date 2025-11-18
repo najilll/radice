@@ -37,20 +37,32 @@
                         <ul class="list-unstyled text-center sticky-bar social-icon social mb-0">
                             <li class="mb-2 h6">Share</li>
                             <li class="mt-1">
-                                <a href="https://www.facebook.com/sharer/sharer.php?u={{ request.build_absolute_uri }}" target="_blank" rel="noopener noreferrer" class="rounded">
+                                <a href="https://www.facebook.com/people/Radice-Foundation/100083786822245/" target="_blank" rel="noopener noreferrer" class="rounded">
                                     <i class="uil uil-facebook-f"></i>
                                 </a>
                             </li>
                             <li class="mt-1">
+                                <a href="https://www.instagram.com/radice_academy?igsh=bTl3bTUwaDMwYnk2" target="_blank" rel="noopener noreferrer" class="rounded">
+                                    <i class="uil uil-instagram"></i>
+                                </a>
+                            </li>
+                            {% if number %}
+                            <li class="mt-1">
+                                <a href="https://api.whatsapp.com/send?phone={{number}}" target="_blank" rel="noopener noreferrer" class="rounded">
+                                    <i class="uil uil-whatsapp"></i>
+                                </a>
+                            </li>
+                            {% endif %}
+                            {% comment %} <li class="mt-1">
                                 <a href="https://twitter.com/intent/tweet?url={{ request.build_absolute_uri }}&text={{ course.title|urlencode }}" target="_blank" rel="noopener noreferrer" class="rounded">
                                     <i class="uil uil-twitter"></i>
                                 </a>
-                            </li>
-                            <li class="mt-1">
+                            </li> {% endcomment %}
+                            {% comment %} <li class="mt-1">
                                 <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ request.build_absolute_uri }}&title={{ course.title|urlencode }}" target="_blank" rel="noopener noreferrer" class="rounded">
                                     <i class="uil uil-linkedin-alt"></i>
                                 </a>
-                            </li>
+                            </li> {% endcomment %}
                         </ul><!--end icon-->
                     </div>
 

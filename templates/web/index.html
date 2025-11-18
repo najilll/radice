@@ -43,7 +43,7 @@
                     <div class="col-lg-5 col-md-6">
                         <div class="position-relative">
                             <div class="px-4">
-                                <img src="{% static "web/_images/grow_02.jpeg" %}" class="img-fluid mx-auto d-block rounded-md" alt="">
+                                <img src="{% static "web/_images/grow_new.png" %}" class="img-fluid mx-auto d-block rounded-md" alt="">
                             </div> 
                         </div>
                     </div><!--end col-->
@@ -141,7 +141,7 @@
         <!-- End -->
 
         <!-- Start -->
-
+        {% if courses %}
         <section class="section" id="courses">
             <div class="container">
                 <div class="row justify-content-center">
@@ -183,6 +183,7 @@
                 </div><!--end row-->
             </div><!--end container-->
         </section>
+        {% endif %}
         <section class="section">
             <div class="container">
                 <div class="row justify-content-center">
@@ -326,7 +327,7 @@
                     </div>
                 </div>
             </div><!--end container-->
-
+            {% if blogs %}
             <div class="container mt-100 mt-60">
                 <div class="row justify-content-center">
                     <div class="col-md-6 text-md-start text-center">
@@ -366,6 +367,7 @@
                     </div>
                 </div><!--end row-->
             </div><!--end container-->
+            {% endif %}
         </section><!--end section-->
 
         <!-- End -->
